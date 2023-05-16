@@ -1,0 +1,26 @@
+defaults:
+  - _self_
+  - hydra: inference
+  - datamodule: luca
+  - model: bert
+  - data_processing: luca
+  - experiment: luca_comparison
+
+
+# # path to work directory
+data_dir: ../data/
+
+
+status: train
+
+training_name: "train-ten-dim.csv"
+validation_name: validation-ten-dim.csv
+testing_name: "test-ten-dim.csv"
+
+model_save_path: ${hydra:runtime.output_dir}/model
+evals_save_path: ${hydra:runtime.output_dir}/stdout_${now:%Y-%m-%d}_${now:%H-%M-%S}.pkl
+
+metric_path: ${hydra:runtime.output_dir}/
+
+
+run_name: ???
