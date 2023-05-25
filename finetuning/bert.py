@@ -1,6 +1,6 @@
 import pandas as pd 
 import numpy as np
-import jsonlines 
+#import jsonlines 
 from omegaconf import OmegaConf, DictConfig
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -20,10 +20,12 @@ from utils.data_loader import _load_data, data_processing
 from utils.plot import plot
 
 from torch.utils.data.dataloader import default_collate
-
 import torch
 import evaluate
 import logging
+
+from sam import SAM
+
 
 log = logging.getLogger(__name__)
 
@@ -62,6 +64,9 @@ def train(cfg):
     accumulation_steps = cfg.model.training_arguments.gradient_accumulation_steps
     
     optimizer = AdamW(model.parameters(), lr=cfg.model.training_arguments.learning_rate)
+    # add SAM optimizer
+    #sam_optimizer = SAM(model.parameters(), optimizer, momentum=0.9)
+    ###################
     train_losses = []
     total_accuracies = []
     validation_losses = []
@@ -90,6 +95,14 @@ def train(cfg):
             if (i + 1) % accumulation_steps == 0:
                 optimizer.step()
                 optimizer.zero_grad()
+                # SAM first-step
+                #sam_optimizer.first_step(zero_grad=True)
+                # SAM second-step
+                #outputs2 = model(ids, attention_mask=mask, labels=targets_onehot)
+                #loss2 = outputs2.loss / accumulation_steps
+                #loss2.backward()
+                #sam_optimizer.second_step(zero_grad=True)
+
             
             train_losses.append([epoch, loss.item()])
 
@@ -217,11 +230,11 @@ def save_file(path,file):
     with open(path, "wb") as f:
         pickle.dump(file, f)
 
-@hydra.main(version_base="1.2", config_path="../config", config_name="config_root")
+@hydra.main(version_base="1.2", config_path=os.path.abspath("./conf"), config_name="config_root")
 def bert(cfg: DictConfig): 
     train(cfg)
 
 if __name__=="__main__":
-    torch.cuda.set_device(f"cuda:{CUDA_NUM}")
+    #torch.cuda.set_device(f"cuda:{CUDA_NUM}")
     torch.cuda.empty_cache()
     bert()
