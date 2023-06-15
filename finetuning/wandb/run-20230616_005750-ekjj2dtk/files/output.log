@@ -1,0 +1,33 @@
+
+Epoch: 0, Loss:  0.6889362931251526
+Epoch: 0, Loss:  0.6822233200073242
+Epoch: 0, Loss:  0.6830058097839355
+Epoch: 0, Loss:  0.6773490905761719
+Epoch: 0, Loss:  0.682249903678894
+Epoch: 0, Loss:  0.6730480790138245
+Epoch: 0, Loss:  0.6888604164123535
+Epoch: 0, Loss:  0.6813086867332458
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/finetuning/finetuning.py", line 255, in <module>
+    main()  # pragma: no cover
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/scratch/venia/OptMLProject/finetuning/finetuning.py", line 215, in main
+    loss.backward()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

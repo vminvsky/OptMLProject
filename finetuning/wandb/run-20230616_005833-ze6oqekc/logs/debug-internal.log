@@ -1,0 +1,669 @@
+2023-06-16 00:58:33,345 INFO    StreamThr :1348553 [internal.py:wandb_internal():86] W&B internal server running at pid: 1348553, started at: 2023-06-16 00:58:33.344972
+2023-06-16 00:58:33,347 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status
+2023-06-16 00:58:33,352 INFO    WriterThread:1348553 [datastore.py:open_for_write():85] open: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/run-ze6oqekc.wandb
+2023-06-16 00:58:33,353 DEBUG   SenderThread:1348553 [sender.py:send():375] send: header
+2023-06-16 00:58:33,359 DEBUG   SenderThread:1348553 [sender.py:send():375] send: run
+2023-06-16 00:58:34,067 INFO    SenderThread:1348553 [dir_watcher.py:__init__():219] watching files in: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files
+2023-06-16 00:58:34,067 INFO    SenderThread:1348553 [sender.py:_start_run_threads():1124] run started: ze6oqekc with start time 1686869913.345554
+2023-06-16 00:58:34,067 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 00:58:34,067 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 00:58:34,070 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: check_version
+2023-06-16 00:58:34,071 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: check_version
+2023-06-16 00:58:34,161 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: run_start
+2023-06-16 00:58:34,176 DEBUG   HandlerThread:1348553 [system_info.py:__init__():31] System info init
+2023-06-16 00:58:34,176 DEBUG   HandlerThread:1348553 [system_info.py:__init__():46] System info init done
+2023-06-16 00:58:34,176 INFO    HandlerThread:1348553 [system_monitor.py:start():181] Starting system monitor
+2023-06-16 00:58:34,176 INFO    SystemMonitor:1348553 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-16 00:58:34,177 INFO    HandlerThread:1348553 [system_monitor.py:probe():201] Collecting system info
+2023-06-16 00:58:34,177 INFO    SystemMonitor:1348553 [interfaces.py:start():190] Started cpu monitoring
+2023-06-16 00:58:34,178 INFO    SystemMonitor:1348553 [interfaces.py:start():190] Started disk monitoring
+2023-06-16 00:58:34,179 INFO    SystemMonitor:1348553 [interfaces.py:start():190] Started gpu monitoring
+2023-06-16 00:58:34,180 INFO    SystemMonitor:1348553 [interfaces.py:start():190] Started memory monitoring
+2023-06-16 00:58:34,181 INFO    SystemMonitor:1348553 [interfaces.py:start():190] Started network monitoring
+2023-06-16 00:58:34,222 DEBUG   HandlerThread:1348553 [system_info.py:probe():195] Probing system
+2023-06-16 00:58:34,225 DEBUG   HandlerThread:1348553 [system_info.py:_probe_git():180] Probing git
+2023-06-16 00:58:34,234 DEBUG   HandlerThread:1348553 [system_info.py:_probe_git():188] Probing git done
+2023-06-16 00:58:34,234 DEBUG   HandlerThread:1348553 [system_info.py:probe():240] Probing system done
+2023-06-16 00:58:34,234 DEBUG   HandlerThread:1348553 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-128-generic-x86_64-with-glibc2.31', 'python': '3.10.10', 'heartbeatAt': '2023-06-15T22:58:34.222856', 'startedAt': '2023-06-15T22:58:33.326911', 'docker': None, 'cuda': '10.2.89', 'args': (), 'state': 'running', 'program': '/scratch/venia/OptMLProject/finetuning/finetuning.py', 'codePath': 'finetuning/finetuning.py', 'git': {'remote': 'https://github.com/vminvsky/OptMLProject.git', 'commit': '04349e2d9841599f19cd92c9e879b2d86335f5d5'}, 'email': 'venia@veselovsky.org', 'root': '/scratch/venia/OptMLProject', 'host': 'iccluster039', 'username': 'veselovs', 'executable': '/scratch/venia/python/miniconda3/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 1.6199374999999991, 'min': 1200.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 1.401, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.511, 'min': 1200.0, 'max': 3300.0}, {'current': 1.512, 'min': 1200.0, 'max': 3300.0}, {'current': 2.941, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.511, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.568, 'min': 1200.0, 'max': 3300.0}, {'current': 3.101, 'min': 1200.0, 'max': 3300.0}, {'current': 1.292, 'min': 1200.0, 'max': 3300.0}, {'current': 1.198, 'min': 1200.0, 'max': 3300.0}, {'current': 1.266, 'min': 1200.0, 'max': 3300.0}, {'current': 1.287, 'min': 1200.0, 'max': 3300.0}, {'current': 1.198, 'min': 1200.0, 'max': 3300.0}, {'current': 1.197, 'min': 1200.0, 'max': 3300.0}, {'current': 1.242, 'min': 1200.0, 'max': 3300.0}, {'current': 2.311, 'min': 1200.0, 'max': 3300.0}, {'current': 1.197, 'min': 1200.0, 'max': 3300.0}, {'current': 1.896, 'min': 1200.0, 'max': 3300.0}, {'current': 1.198, 'min': 1200.0, 'max': 3300.0}, {'current': 1.403, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.511, 'min': 1200.0, 'max': 3300.0}, {'current': 1.512, 'min': 1200.0, 'max': 3300.0}, {'current': 3.093, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.512, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.509, 'min': 1200.0, 'max': 3300.0}, {'current': 1.606, 'min': 1200.0, 'max': 3300.0}, {'current': 3.117, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.198, 'min': 1200.0, 'max': 3300.0}, {'current': 1.285, 'min': 1200.0, 'max': 3300.0}, {'current': 1.262, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.197, 'min': 1200.0, 'max': 3300.0}, {'current': 1.292, 'min': 1200.0, 'max': 3300.0}, {'current': 3.023, 'min': 1200.0, 'max': 3300.0}, {'current': 1.198, 'min': 1200.0, 'max': 3300.0}, {'current': 1.662, 'min': 1200.0, 'max': 3300.0}, {'current': 1.199, 'min': 1200.0, 'max': 3300.0}], 'disk': {'total': 216.15381240844727, 'used': 39.895381927490234}, 'gpu': 'NVIDIA GeForce GTX TITAN X', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}], 'memory': {'total': 251.80284881591797}}
+2023-06-16 00:58:34,234 INFO    HandlerThread:1348553 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-16 00:58:34,234 INFO    HandlerThread:1348553 [system_monitor.py:probe():214] Publishing system info
+2023-06-16 00:58:34,234 DEBUG   HandlerThread:1348553 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-16 00:58:34,235 DEBUG   HandlerThread:1348553 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-16 00:58:34,235 DEBUG   HandlerThread:1348553 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-16 00:58:35,070 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 00:58:35,070 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/conda-environment.yaml
+2023-06-16 00:58:35,071 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/requirements.txt
+2023-06-16 00:58:38,071 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/conda-environment.yaml
+2023-06-16 00:58:38,118 DEBUG   HandlerThread:1348553 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-16 00:58:38,120 INFO    HandlerThread:1348553 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-16 00:58:38,123 DEBUG   SenderThread:1348553 [sender.py:send():375] send: files
+2023-06-16 00:58:38,124 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-06-16 00:58:38,138 DEBUG   SenderThread:1348553 [sender.py:send():375] send: telemetry
+2023-06-16 00:58:38,140 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 00:58:38,141 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 00:58:38,588 INFO    wandb-upload_0:1348553 [upload_job.py:push():137] Uploaded file /tmp/tmpmz9t6m7lwandb/38ifzeo7-wandb-metadata.json
+2023-06-16 00:58:39,071 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-metadata.json
+2023-06-16 00:58:39,122 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:58:40,072 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:58:42,073 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:58:44,074 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:58:44,784 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:58:46,075 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:58:48,076 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:58:50,077 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:58:50,439 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:58:52,078 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:58:53,137 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 00:58:53,138 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 00:58:54,079 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:58:55,473 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:58:58,081 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:00,082 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:01,169 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:02,084 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:04,085 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:06,086 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:06,868 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:08,087 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/config.yaml
+2023-06-16 00:59:08,138 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 00:59:08,139 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 00:59:10,088 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:12,089 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:12,958 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:14,090 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:16,091 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:18,092 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:18,876 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:22,094 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:23,138 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 00:59:23,138 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 00:59:24,095 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:24,284 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:26,096 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:28,097 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:29,567 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:32,099 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:34,100 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:34,181 DEBUG   SystemMonitor:1348553 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-16 00:59:34,183 DEBUG   SenderThread:1348553 [sender.py:send():375] send: stats
+2023-06-16 00:59:34,658 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:36,101 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:38,138 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 00:59:38,139 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 00:59:39,748 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:40,103 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:42,104 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:44,105 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:44,828 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:46,106 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:49,909 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:50,108 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:52,109 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:53,138 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 00:59:53,139 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 00:59:54,110 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:54,926 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 00:59:56,111 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 00:59:59,964 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:00,113 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:02,114 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:04,115 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:04,185 DEBUG   SenderThread:1348553 [sender.py:send():375] send: stats
+2023-06-16 01:00:05,034 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:06,117 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:08,139 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 01:00:08,140 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 01:00:10,049 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:10,119 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:12,120 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:14,121 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:15,095 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:16,122 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:20,124 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:20,164 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:22,125 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:23,138 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 01:00:23,139 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 01:00:24,126 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:25,179 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:26,128 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:30,130 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:30,216 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:32,131 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:34,132 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:34,188 DEBUG   SenderThread:1348553 [sender.py:send():375] send: stats
+2023-06-16 01:00:35,258 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:36,133 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:38,139 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 01:00:38,140 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 01:00:40,135 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:41,256 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:42,136 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:44,137 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:46,138 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:46,275 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:50,140 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:52,141 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:52,270 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:00:53,139 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 01:00:53,139 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 01:00:54,144 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:56,145 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:00:57,287 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:00,147 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:02,148 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:02,315 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:04,149 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:04,190 DEBUG   SenderThread:1348553 [sender.py:send():375] send: stats
+2023-06-16 01:01:07,323 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:08,139 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 01:01:08,140 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 01:01:08,151 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:10,152 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:12,153 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:12,359 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:14,138 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:14,140 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:14,140 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:14,141 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:14,154 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:14,155 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:14,613 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:14,614 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:14,615 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:14,615 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:15,090 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:15,092 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:15,092 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:15,093 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:15,155 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:15,566 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:15,568 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:15,568 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:15,569 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:16,044 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:16,045 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:16,046 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:16,046 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:16,155 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:16,521 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:16,522 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:16,523 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:16,523 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:16,998 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:17,000 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:17,000 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:17,027 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:17,156 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:17,156 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:17,476 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:17,478 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:17,478 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:17,547 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:17,547 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:17,955 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:17,956 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:17,956 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:17,957 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:18,156 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:18,434 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:18,435 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:18,435 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:18,436 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:18,911 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:18,912 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:18,913 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:18,913 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:19,157 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:19,157 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:19,389 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:19,390 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:19,391 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:19,391 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:19,866 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:19,867 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:19,867 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:19,868 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:20,157 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:20,344 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:20,345 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:20,345 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:20,346 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:20,822 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:20,823 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:20,823 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:20,824 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:21,158 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:21,158 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:21,302 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:21,303 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:21,303 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:21,304 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:21,781 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:21,782 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:21,782 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:21,783 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:22,158 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:22,258 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:22,260 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:22,260 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:22,261 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:22,737 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:22,738 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:22,739 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:22,739 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:22,797 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:23,139 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 01:01:23,140 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 01:01:23,159 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:23,159 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:23,216 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:23,287 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:23,288 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:23,299 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:23,694 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:23,695 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:23,695 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:23,699 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:24,159 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:24,171 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:24,172 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:24,172 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:24,173 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:24,650 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:24,651 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:24,651 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:24,652 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:25,128 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:25,130 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:25,130 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:25,130 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:25,160 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:25,160 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:25,606 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:25,718 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:25,718 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:25,719 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:26,084 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:26,085 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:26,085 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:26,086 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:26,160 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:26,561 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:26,563 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:26,563 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:26,563 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:27,039 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:27,040 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:27,040 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:27,041 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:27,161 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:27,161 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:27,516 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:27,518 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:27,518 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:27,519 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:27,995 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:27,996 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:27,996 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:27,997 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:27,997 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:28,161 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:28,472 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:28,474 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:28,474 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:28,475 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:28,950 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:28,951 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:28,951 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:28,952 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:29,162 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:29,162 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:29,427 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:29,429 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:29,429 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:29,430 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:29,907 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:29,908 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:29,909 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:29,909 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:30,163 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:30,384 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:30,385 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:30,386 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:30,386 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:30,863 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:30,864 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:30,864 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:30,865 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:31,164 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:31,167 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:31,340 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:31,342 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:31,342 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:31,343 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:31,818 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:31,820 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:31,820 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:31,821 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:32,164 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:32,296 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:32,298 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:32,298 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:32,299 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:32,773 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:32,775 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:32,775 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:32,776 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:33,165 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:33,165 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:33,251 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:33,253 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:33,253 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:33,254 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:33,254 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:33,729 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:33,730 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:33,731 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:33,751 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:34,165 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:34,192 DEBUG   SenderThread:1348553 [sender.py:send():375] send: stats
+2023-06-16 01:01:34,206 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:34,208 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:34,208 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:34,223 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:34,684 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:34,686 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:34,686 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:34,687 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:35,162 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:35,163 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:35,164 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:35,164 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:35,166 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:35,166 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:35,640 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:35,641 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:35,641 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:35,642 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:36,118 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:36,119 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:36,119 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:36,120 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:36,166 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:36,595 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:36,596 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:36,597 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:36,597 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:37,072 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:37,074 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:37,074 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:37,075 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:37,167 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:37,167 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:37,550 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:37,551 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:37,551 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:37,552 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:38,028 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:38,029 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:38,029 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:38,030 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:38,139 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 01:01:38,140 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 01:01:38,167 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:38,292 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:38,505 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:38,506 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:38,507 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:38,507 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:38,983 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:38,984 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:38,985 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:38,985 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:39,168 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:39,168 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:39,460 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:39,461 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:39,462 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:39,462 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:39,940 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:39,940 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:39,941 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:39,941 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:40,168 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:40,419 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:40,420 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:40,420 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:40,421 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:40,896 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:40,897 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:40,898 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:40,898 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:41,173 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:41,174 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:41,374 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:41,375 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:41,376 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:41,376 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:41,851 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:41,853 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:41,853 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:41,854 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:42,174 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:42,329 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:42,330 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:42,331 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:42,331 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:42,807 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:42,808 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:42,808 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:42,809 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:43,178 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:43,179 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:43,285 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:43,286 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:43,286 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:43,287 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:43,529 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:43,530 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:43,531 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:43,531 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:43,532 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:44,099 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:44,100 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:44,101 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:44,104 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:44,179 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:44,578 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:44,579 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:44,580 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:44,634 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:45,056 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:45,057 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:45,057 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:45,073 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:45,180 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:45,534 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:45,535 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:45,535 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:45,536 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:46,011 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:46,013 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:46,013 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:46,014 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:46,180 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:46,181 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:46,489 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:46,490 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:46,491 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:46,491 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:46,966 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:46,968 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:46,968 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:46,969 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:47,181 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:47,444 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:47,445 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:47,445 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:47,446 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:47,922 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:47,923 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:47,923 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:47,924 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:48,181 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:48,182 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:48,400 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:48,401 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:48,402 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:48,402 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:48,878 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:48,879 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:48,879 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:48,880 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:48,881 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:49,182 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:49,355 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:49,356 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:49,357 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:49,357 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:49,832 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:49,834 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:49,834 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:49,835 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:49,986 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 01:01:49,988 DEBUG   SenderThread:1348553 [sender.py:send():375] send: history
+2023-06-16 01:01:49,989 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 01:01:49,989 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:49,994 DEBUG   SenderThread:1348553 [sender.py:send():375] send: exit
+2023-06-16 01:01:49,994 INFO    SenderThread:1348553 [sender.py:send_exit():598] handling exit code: 0
+2023-06-16 01:01:49,994 INFO    SenderThread:1348553 [sender.py:send_exit():600] handling runtime: 195
+2023-06-16 01:01:50,009 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:50,010 INFO    SenderThread:1348553 [sender.py:send_exit():606] send defer
+2023-06-16 01:01:50,010 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:50,010 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-16 01:01:50,010 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:50,010 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-06-16 01:01:50,011 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 1
+2023-06-16 01:01:50,011 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:50,011 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-16 01:01:50,011 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:50,011 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-06-16 01:01:50,011 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 2
+2023-06-16 01:01:50,012 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:50,012 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-16 01:01:50,012 INFO    HandlerThread:1348553 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-16 01:01:50,012 DEBUG   SystemMonitor:1348553 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-16 01:01:50,013 DEBUG   SystemMonitor:1348553 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-16 01:01:50,015 INFO    HandlerThread:1348553 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-16 01:01:50,016 INFO    HandlerThread:1348553 [interfaces.py:finish():202] Joined disk monitor
+2023-06-16 01:01:50,182 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:50,183 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:50,362 INFO    HandlerThread:1348553 [interfaces.py:finish():202] Joined gpu monitor
+2023-06-16 01:01:50,362 INFO    HandlerThread:1348553 [interfaces.py:finish():202] Joined memory monitor
+2023-06-16 01:01:50,362 INFO    HandlerThread:1348553 [interfaces.py:finish():202] Joined network monitor
+2023-06-16 01:01:50,363 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:50,363 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-06-16 01:01:50,363 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 3
+2023-06-16 01:01:50,364 DEBUG   SenderThread:1348553 [sender.py:send():375] send: stats
+2023-06-16 01:01:50,364 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:50,365 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-16 01:01:50,365 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:50,365 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-06-16 01:01:50,365 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 4
+2023-06-16 01:01:50,366 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:50,366 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-16 01:01:50,366 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:50,366 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-06-16 01:01:50,367 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 5
+2023-06-16 01:01:50,367 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:50,367 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-16 01:01:50,368 DEBUG   SenderThread:1348553 [sender.py:send():375] send: summary
+2023-06-16 01:01:50,368 INFO    SenderThread:1348553 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 01:01:50,369 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:50,369 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-06-16 01:01:50,369 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 6
+2023-06-16 01:01:50,369 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:50,369 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-16 01:01:50,370 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:50,370 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-06-16 01:01:50,370 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 7
+2023-06-16 01:01:50,370 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 01:01:50,370 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:50,371 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-16 01:01:50,371 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:50,371 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-06-16 01:01:50,994 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 01:01:51,183 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:52,183 INFO    Thread-12 :1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:53,208 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 8
+2023-06-16 01:01:53,208 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 01:01:53,208 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:53,209 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-16 01:01:53,209 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:53,210 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-06-16 01:01:53,225 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 9
+2023-06-16 01:01:53,225 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:53,226 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-16 01:01:53,226 DEBUG   SenderThread:1348553 [sender.py:send():375] send: artifact
+2023-06-16 01:01:54,095 INFO    SenderThread:1348553 [sender.py:send_artifact():1474] sent artifact job-https___github.com_vminvsky_OptMLProject.git_finetuning_finetuning.py - {'id': 'QXJ0aWZhY3Q6NDg4NTY5NTEz', 'digest': '07070ead25b40103df5a7e2a184c6408', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_vminvsky_OptMLProject.git_finetuning_finetuning.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_vminvsky_OptMLProject.git_finetuning_finetuning.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc2OTI2NTkz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDg4ODg0MDA1', 'versionIndex': 2}}, 'version': 'v0'}
+2023-06-16 01:01:54,095 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:54,095 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-06-16 01:01:54,095 INFO    SenderThread:1348553 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-06-16 01:01:54,185 INFO    SenderThread:1348553 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:54,185 INFO    SenderThread:1348553 [dir_watcher.py:finish():395] scan: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files
+2023-06-16 01:01:54,186 INFO    SenderThread:1348553 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json wandb-summary.json
+2023-06-16 01:01:54,186 INFO    SenderThread:1348553 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/conda-environment.yaml conda-environment.yaml
+2023-06-16 01:01:54,186 INFO    SenderThread:1348553 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/config.yaml config.yaml
+2023-06-16 01:01:54,192 INFO    SenderThread:1348553 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log output.log
+2023-06-16 01:01:54,201 INFO    SenderThread:1348553 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-metadata.json wandb-metadata.json
+2023-06-16 01:01:54,202 INFO    SenderThread:1348553 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/requirements.txt requirements.txt
+2023-06-16 01:01:54,202 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 10
+2023-06-16 01:01:54,203 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:54,203 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-16 01:01:54,212 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:54,213 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-06-16 01:01:54,213 INFO    SenderThread:1348553 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-16 01:01:54,611 INFO    wandb-upload_0:1348553 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/wandb-summary.json
+2023-06-16 01:01:54,682 INFO    wandb-upload_4:1348553 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/requirements.txt
+2023-06-16 01:01:54,709 INFO    wandb-upload_2:1348553 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/config.yaml
+2023-06-16 01:01:54,710 INFO    wandb-upload_1:1348553 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/conda-environment.yaml
+2023-06-16 01:01:54,786 INFO    wandb-upload_3:1348553 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/files/output.log
+2023-06-16 01:01:54,986 INFO    Thread-11 (_thread_body):1348553 [sender.py:transition_state():626] send defer: 11
+2023-06-16 01:01:54,987 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:54,987 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-16 01:01:54,988 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:54,988 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-06-16 01:01:54,988 INFO    SenderThread:1348553 [file_pusher.py:join():172] waiting for file pusher
+2023-06-16 01:01:54,988 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 12
+2023-06-16 01:01:54,989 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:54,989 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-16 01:01:54,989 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:54,989 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-06-16 01:01:55,143 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 13
+2023-06-16 01:01:55,143 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:55,144 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-16 01:01:55,144 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:55,144 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-06-16 01:01:55,144 INFO    SenderThread:1348553 [sender.py:transition_state():626] send defer: 14
+2023-06-16 01:01:55,145 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 01:01:55,145 DEBUG   SenderThread:1348553 [sender.py:send():375] send: final
+2023-06-16 01:01:55,145 INFO    HandlerThread:1348553 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-16 01:01:55,146 DEBUG   SenderThread:1348553 [sender.py:send():375] send: footer
+2023-06-16 01:01:55,146 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: defer
+2023-06-16 01:01:55,146 INFO    SenderThread:1348553 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-06-16 01:01:55,147 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 01:01:55,148 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 01:01:55,148 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: server_info
+2023-06-16 01:01:55,149 DEBUG   SenderThread:1348553 [sender.py:send_request():402] send_request: server_info
+2023-06-16 01:01:55,153 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-16 01:01:55,154 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-16 01:01:55,287 INFO    MainThread:1348553 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-06-16 01:01:55,288 INFO    MainThread:1348553 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-06-16 01:01:55,289 INFO    MainThread:1348553 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-06-16 01:01:55,289 DEBUG   HandlerThread:1348553 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-16 01:01:55,289 INFO    HandlerThread:1348553 [handler.py:finish():845] shutting down handler
+2023-06-16 01:01:56,149 INFO    WriterThread:1348553 [datastore.py:close():298] close: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_005833-ze6oqekc/run-ze6oqekc.wandb
+2023-06-16 01:01:56,287 INFO    SenderThread:1348553 [sender.py:finish():1550] shutting down sender
+2023-06-16 01:01:56,287 INFO    SenderThread:1348553 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-16 01:01:56,287 INFO    SenderThread:1348553 [file_pusher.py:join():172] waiting for file pusher
