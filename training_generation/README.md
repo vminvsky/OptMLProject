@@ -7,9 +7,9 @@ We use the sarcasm detection dataset from the [*SemEval-2022 Task 6*](https://ac
 
 ### Data processing
 Data processing on the sarcasm data:
-    - Encoded and decoded in unicode.
-    - Tokenization, label preprocessing and column formatting.
-    - Split the dataset into train, validation, and test (Size of train set by default 0.9).
+* Encoded and decoded in unicode.
+* Tokenization, label preprocessing and column formatting.
+* Split the dataset into train, validation, and test (Size of train set by default 0.9).
 
 ### Data structure
 Base dataset: ``data/{construct}/base.json``
@@ -34,8 +34,7 @@ We fine-tune our model across two different settings: one-
 step (baseline), two-step (SAM). In the baseline setting we
 use a AdamW. In the SAM-setting we fine-tuned using the
 AdamW as the base optimizer and the two additional training
-steps (refer above). The code for the [*SAM*](https://github.com/
-davda54/sam) optimizer was taken from an online repository. 
+steps (refer above). The code for the [*SAM*](https://github.com/davda54/sam) optimizer was taken from an online repository. 
 
 The code for fine-tuning the model, both with SAM and without, can be found in ``src/finetuning.py``. Whether to use or not to use SAM as optimizer can be specified in ``src/trainer/trainer.yaml`` by setting setting the boolean *SAM_ACTIVE* to either ``True`` or ``False``, respectively.
 
