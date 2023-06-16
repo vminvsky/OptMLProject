@@ -18,6 +18,10 @@ from config import SARCASM_DATA_DIR
 
 
 class SarcasmDataset(DataClassWorkerVsGPT):
+    """
+    A dataset for sarcasm detection.
+    This class preprocesses the dataset by tokenizing the text, converting labels to int, and formatting the columns.
+    """
     def __init__(
             self,
             path: Union[Path, None],
@@ -27,11 +31,26 @@ class SarcasmDataset(DataClassWorkerVsGPT):
             ],
             is_augmented: bool = False,
     ) -> None:
+        """
+        Initializes the SarcasmDataset class.
+
+        Parameters:
+        path (Path or None): The path to the dataset. If None, dataset will be loaded from SARCASM_DATA_DIR.
+        labels (List[str]): List of label names. Default is ["sarcastic", "not-sarcastic"].
+        is_augmented (bool): Whether the dataset has been augmented. Default is False.
+        """
         super().__init__(path, is_augmented)
         self.labels: List[str] = labels
         self.is_augmented: bool = is_augmented
 
     def preprocess(self, model_name: str) -> None:
+        """
+        Preprocesses the dataset.
+
+        Parameters:
+        model_name (str): Name of the model to use for tokenizing the text.
+        """
+        
         # Convert labels to int
         self.data = self.data.rename_column("labels", "labels_og")
         self.data = self.data.map(
