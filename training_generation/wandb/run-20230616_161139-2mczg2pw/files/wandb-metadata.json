@@ -1,0 +1,289 @@
+{
+    "os": "Linux-5.4.0-128-generic-x86_64-with-glibc2.31",
+    "python": "3.10.10",
+    "heartbeatAt": "2023-06-16T14:11:40.455156",
+    "startedAt": "2023-06-16T14:11:39.829460",
+    "docker": null,
+    "cuda": "10.2.89",
+    "args": [],
+    "state": "running",
+    "program": "/scratch/venia/OptMLProject/training_generation/src/finetuning.py",
+    "codePath": "training_generation/src/finetuning.py",
+    "git": {
+        "remote": null,
+        "commit": "675dbf2e8d5f764e1c41c1521351272ae685092f"
+    },
+    "email": "venia@veselovsky.org",
+    "root": "/scratch/venia/OptMLProject",
+    "host": "iccluster039",
+    "username": "veselovs",
+    "executable": "/scratch/venia/python/miniconda3/bin/python",
+    "cpu_count": 24,
+    "cpu_count_logical": 48,
+    "cpu_freq": {
+        "current": 1.4743125,
+        "min": 1200.0,
+        "max": 3300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1.495,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.664,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.198,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.198,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.897,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.198,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.471,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.198,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3.177,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.493,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.395,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.545,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.203,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.201,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3.189,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.198,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.545,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.199,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.198,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.974,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.197,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.327,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.297,
+            "min": 1200.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "total": 216.15381240844727,
+        "used": 39.88178634643555
+    },
+    "gpu": "NVIDIA GeForce GTX TITAN X",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX TITAN X",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA GeForce GTX TITAN X",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 251.80284881591797
+    }
+}

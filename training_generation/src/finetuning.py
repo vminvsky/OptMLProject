@@ -94,11 +94,12 @@ def main(cfg: TrainerConfig) -> None:
 
     batch_size = cfg.batch_size
     
+    num_train = 2000
     
     if cfg.use_augmented_data:
-        train_dataloader = create_dataloader(dataset.data["augmented_train"].select(range(2000)), batch_size=batch_size)
+        train_dataloader = create_dataloader(dataset.data["augmented_train"].select(range(num_train)), batch_size=batch_size)
     else:
-        train_dataloader = create_dataloader(dataset.data["train"].select(range(1000)), batch_size=batch_size)
+        train_dataloader = create_dataloader(dataset.data["train"].select(range(num_train)), batch_size=batch_size)
     valid = create_dataloader(dataset.data["train"], batch_size=batch_size)
     test = create_dataloader(dataset.data["test"], batch_size=batch_size)
 
@@ -112,12 +113,11 @@ def main(cfg: TrainerConfig) -> None:
     
     if SAM_ACTIVE:
         lr = 2e-5
+        rho = 0.003
         base_optimizer = torch.optim.AdamW
-        optimizer = SAM(model.parameters(), base_optimizer, lr=lr, rho=0.05)
-        scheduler = StepLR(optimizer, lr, 2)
-
+        optimizer = SAM(model.parameters(), base_optimizer, lr=lr, rho=rho, weight_decay=0)
     else:
-        optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
+        optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5, weight_decay=0)
     
     
     wandb.init(

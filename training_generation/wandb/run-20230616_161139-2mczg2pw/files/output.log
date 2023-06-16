@@ -1,0 +1,92 @@
+2000
+Epoch: 0, Loss:  0.6955388784408569
+Epoch: 0, Loss:  0.6950863599777222
+Epoch: 0, Loss:  0.7065442204475403
+Epoch: 0, Loss:  0.7035866975784302
+Epoch: 0, Loss:  0.6915076971054077
+Epoch: 0, Loss:  0.6944035291671753
+Epoch: 0, Loss:  0.7047325372695923
+Epoch: 0, Loss:  0.6929098963737488
+Epoch: 0, Loss:  0.6989209651947021
+Epoch: 0, Loss:  0.6957299709320068
+Epoch: 0, Loss:  0.6979328393936157
+Epoch: 0, Loss:  0.6932816505432129
+Epoch: 0, Loss:  0.7030455470085144
+Epoch: 0, Loss:  0.7083057165145874
+Epoch: 0, Loss:  0.6991649866104126
+Epoch: 0, Loss:  0.6963819265365601
+Epoch: 0, Loss:  0.6749189496040344
+Epoch: 0, Loss:  0.6840429902076721
+Epoch: 0, Loss:  0.7055891156196594
+Epoch: 0, Loss:  0.6943796873092651
+Epoch: 0, Loss:  0.7053928971290588
+Epoch: 0, Loss:  0.7119187116622925
+Epoch: 0, Loss:  0.6970720291137695
+Epoch: 0, Loss:  0.6852126121520996
+Epoch: 0, Loss:  0.6998925805091858
+Epoch: 0, Loss:  0.7050319314002991
+Epoch: 0, Loss:  0.70126873254776
+Epoch: 0, Loss:  0.7035486102104187
+Epoch: 0, Loss:  0.6781935691833496
+Epoch: 0, Loss:  0.6939482688903809
+Epoch: 0, Loss:  0.692295253276825
+Epoch: 0, Loss:  0.7121049165725708
+2000
+Epoch: 1, Loss:  0.688946008682251
+Epoch: 1, Loss:  0.6935170888900757
+Epoch: 1, Loss:  0.6703788042068481
+Epoch: 1, Loss:  0.6928713321685791
+Epoch: 1, Loss:  0.6828030347824097
+Epoch: 1, Loss:  0.6862612962722778
+Epoch: 1, Loss:  0.6877984404563904
+Epoch: 1, Loss:  0.6744801998138428
+Epoch: 1, Loss:  0.6890240907669067
+Epoch: 1, Loss:  0.6845285892486572
+Epoch: 1, Loss:  0.6866968870162964
+Epoch: 1, Loss:  0.6919037103652954
+Epoch: 1, Loss:  0.6848353147506714
+Epoch: 1, Loss:  0.6965025067329407
+Epoch: 1, Loss:  0.7022253274917603
+Epoch: 1, Loss:  0.711662232875824
+Epoch: 1, Loss:  0.6980066299438477
+Epoch: 1, Loss:  0.6897464990615845
+Epoch: 1, Loss:  0.6873036026954651
+Epoch: 1, Loss:  0.6772379279136658
+Epoch: 1, Loss:  0.685788631439209
+Epoch: 1, Loss:  0.7005000114440918
+Epoch: 1, Loss:  0.6848169565200806
+Epoch: 1, Loss:  0.684972882270813
+Epoch: 1, Loss:  0.6891413927078247
+Epoch: 1, Loss:  0.694984495639801
+Epoch: 1, Loss:  0.7017884850502014
+Epoch: 1, Loss:  0.6935898661613464
+Epoch: 1, Loss:  0.6837376356124878
+Epoch: 1, Loss:  0.6741287112236023
+Epoch: 1, Loss:  0.6997106671333313
+Epoch: 1, Loss:  0.6821907162666321
+2000
+Epoch: 2, Loss:  0.6669379472732544
+Epoch: 2, Loss:  0.6806342601776123
+Epoch: 2, Loss:  0.6585831642150879
+Epoch: 2, Loss:  0.6762171387672424
+Epoch: 2, Loss:  0.7123058438301086
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/training_generation/src/finetuning.py", line 191, in <module>
+    main()  # pragma: no cover
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/scratch/venia/OptMLProject/training_generation/src/finetuning.py", line 142, in main
+    print(f"Epoch: {epoch}, Loss:  {loss.item()}")
+KeyboardInterrupt

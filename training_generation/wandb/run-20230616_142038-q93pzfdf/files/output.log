@@ -1,0 +1,27 @@
+Epoch: 0, Loss:  0.6706885099411011
+Epoch: 0, Loss:  0.6653242707252502
+Epoch: 0, Loss:  0.6577708125114441
+[33m[W 2023-06-16 14:20:47,583][39m Trial 0 failed with parameters: {'lr': 9.10397866622736e-06, 'rho': 0.6373381187631455} because of the following error: KeyboardInterrupt().
+Traceback (most recent call last):
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/optuna/study/_optimize.py", line 200, in _run_trial
+    value_or_values = func(trial)
+  File "/scratch/venia/OptMLProject/training_generation/src/hp_search.py", line 147, in objective
+    print(f"Epoch: {epoch}, Loss:  {loss.item()}")
+KeyboardInterrupt
+[33m[W 2023-06-16 14:20:47,584][39m Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/training_generation/src/hp_search.py", line 202, in <module>
+    study.optimize(objective, n_trials=50)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/optuna/study/study.py", line 443, in optimize
+    _optimize(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/optuna/study/_optimize.py", line 66, in _optimize
+    _optimize_sequential(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/optuna/study/_optimize.py", line 163, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/optuna/study/_optimize.py", line 251, in _run_trial
+    raise func_err
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/optuna/study/_optimize.py", line 200, in _run_trial
+    value_or_values = func(trial)
+  File "/scratch/venia/OptMLProject/training_generation/src/hp_search.py", line 147, in objective
+    print(f"Epoch: {epoch}, Loss:  {loss.item()}")
+KeyboardInterrupt

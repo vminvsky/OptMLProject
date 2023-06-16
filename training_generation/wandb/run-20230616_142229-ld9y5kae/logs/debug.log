@@ -1,0 +1,14 @@
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_setup.py:_flush():76] Current SDK version is 0.15.2
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_setup.py:_flush():76] Configure stats pid to 1827459
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_setup.py:_flush():76] Loading settings from /home/veselovs/.config/wandb/settings
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_setup.py:_flush():76] Loading settings from /scratch/venia/OptMLProject/training_generation/wandb/settings
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'training_generation/src/hp_search.py', 'program': '/scratch/venia/OptMLProject/training_generation/src/hp_search.py'}
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_init.py:_log_setup():507] Logging user logs to /scratch/venia/OptMLProject/training_generation/wandb/run-20230616_142229-ld9y5kae/logs/debug.log
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_init.py:_log_setup():508] Logging internal logs to /scratch/venia/OptMLProject/training_generation/wandb/run-20230616_142229-ld9y5kae/logs/debug-internal.log
+2023-06-16 14:22:29,269 INFO    MainThread:1827459 [wandb_init.py:init():547] calling init triggers
+2023-06-16 14:22:29,270 INFO    MainThread:1827459 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-16 14:22:29,270 INFO    MainThread:1827459 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-06-16 14:22:44,081 WARNING MsgRouterThr:1827459 [router.py:message_loop():77] message_loop has been closed

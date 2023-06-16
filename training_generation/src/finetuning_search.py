@@ -54,7 +54,7 @@ def calculate_metrics(preds, labels):
 
 # @click.command()
 # @click.version_option()
-@hydra.main(version_base=None, config_path="conf/trainer", config_name="trainer.yaml")
+@hydra.main(version_base=None, config_path="conf/trainer", config_name="trainer_search.yaml")
 def main(cfg: TrainerConfig) -> None:
     SAM_ACTIVE = cfg.SAM_ACTIVE
 
