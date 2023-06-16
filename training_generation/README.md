@@ -12,9 +12,9 @@ Data processing on the sarcasm data:
 * Split the dataset into train, validation, and test (Size of train set by default 0.9).
 
 ### Data structure
-Base dataset: ``data/{construct}/base.json``
+Base dataset: ``data/sarcasm/base.json``
 
-Generated dataset: ``{logs}/{task}_{model_name}.json``
+Generated dataset: ``{logs}/sarcasm_gpt-3.5-turbo.json``
 
 ### Running the file
 To run ```run_inference.py```: "python src/run_inference.py run_name="{task_name}""
@@ -39,7 +39,3 @@ steps (refer above). The code for the [*SAM*](https://github.com/davda54/sam) op
 The code for fine-tuning the model, both with SAM and without, can be found in ``src/finetuning.py``. Whether to use or not to use SAM as optimizer can be specified in ``src/trainer/trainer.yaml`` by setting setting the boolean *SAM_ACTIVE* to either ``True`` or ``False``, respectively.
 
 Similarily, hyperparameter search in these different settings can be run through the file ``hp_search.py``. 
-
-### Running the file
-
-To run ``finetuning.py``: 
