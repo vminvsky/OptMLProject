@@ -45,6 +45,18 @@ random.seed(42)
 
 
 def calculate_metrics(preds, labels):
+    """
+    Function to calculate accuracy, macro F1 score, and precision.
+
+    Args:
+        preds (numpy.ndarray): Predicted values (logits) from the model.
+        labels (numpy.ndarray): Actual label values.
+
+    Returns:
+        accuracy (float): Accuracy of the model's predictions.
+        macro_f1 (float): Macro F1 score of the model's predictions.
+        precision (float): Precision of the model's predictions.
+    """
     pred_flat = np.argmax(preds, axis=1).flatten()
     labels_flat = np.argmax(labels, axis=1).flatten()
     accuracy = accuracy_score(labels_flat, pred_flat)
@@ -56,7 +68,18 @@ def calculate_metrics(preds, labels):
 # @click.version_option()
 @hydra.main(version_base=None, config_path="conf/trainer", config_name="trainer.yaml")
 def main(cfg: TrainerConfig) -> None:
-    SAM_ACTIVE = cfg.SAM_ACTIVE
+    """
+    Main function to carry out the training process of the model.
+
+    The function first sets up the datasets, device, dataloaders, model, and optimizer.
+    Then it trains the model and evaluates its performance on validation and test sets.
+    The Weights & Biases (wandb) service is used for logging the metrics.
+
+    Args:
+        cfg (TrainerConfig): Configuration object containing all the necessary information for the training process.
+    """
+
+    SAM_ACTIVE = cfg.SAM_ACTIVE # check if SAM optimizer is active from the config
 
     if cfg.dataset == "sarcasm":
         dataset = dataclass_sarcasm.SarcasmDataset(
@@ -82,7 +105,7 @@ def main(cfg: TrainerConfig) -> None:
     dataset.data["base"] = base_dataset.data["train"]
     dataset.data["original_train"] = dataset.data["train"]
     dataset.data["augmented_train"] = augmented_dataset.data["train"]
-
+    # Preprocess the data
     dataset.preprocess(model_name=cfg.ckpt)
 
     # Specify the length of train and validation set
@@ -96,6 +119,7 @@ def main(cfg: TrainerConfig) -> None:
     
     num_train = 2000
     
+    # Create the dataloaders
     if cfg.use_augmented_data:
         train_dataloader = create_dataloader(dataset.data["augmented_train"].select(range(num_train)), batch_size=batch_size)
     else:
@@ -103,6 +127,7 @@ def main(cfg: TrainerConfig) -> None:
     valid = create_dataloader(dataset.data["train"], batch_size=batch_size)
     test = create_dataloader(dataset.data["test"], batch_size=batch_size)
 
+    # Initialize the model
     model = AutoModelForSequenceClassification.from_pretrained(
         'intfloat/e5-base',
         num_labels=len(dataset.labels)
@@ -110,7 +135,7 @@ def main(cfg: TrainerConfig) -> None:
 
     model.to(device)
     
-    
+    # Select optimizer
     if SAM_ACTIVE:
         lr = 2e-5
         rho = 0.003
@@ -119,7 +144,7 @@ def main(cfg: TrainerConfig) -> None:
     else:
         optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5, weight_decay=0)
     
-    
+    # Initialize wandb for logging
     wandb.init(
             project=cfg.wandb_project,
             entity=cfg.wandb_entity,
@@ -131,12 +156,14 @@ def main(cfg: TrainerConfig) -> None:
     model.train()
     for epoch in range(4): # 3 epochs
         print(len(dataset.data["train"]))
+
+        # Iterate over the batches of data in the training dataloader
         for batch in train_dataloader:
-            
+            # Move to the appropriate device (CPU/GPU)
             input_ids = batch['input_ids'].to(device)
             attention_mask = batch['attention_mask'].to(device)
             labels = batch['labels'].to(device)
-            
+            # Feed the input to the model and get the output and loss
             outputs = model(input_ids, attention_mask=attention_mask, labels=labels)
             loss = outputs.loss
             print(f"Epoch: {epoch}, Loss:  {loss.item()}")
@@ -147,7 +174,7 @@ def main(cfg: TrainerConfig) -> None:
                     loss = model(input_ids, attention_mask=attention_mask, labels=labels).loss
                     loss.backward()
                     return loss
-                
+                # Perform backpropagation to compute gradients, step of optimizer, zero the gradients
                 loss.backward()
                 optimizer.step(closure)
                 optimizer.zero_grad()
@@ -156,22 +183,25 @@ def main(cfg: TrainerConfig) -> None:
                 optimizer.step()
 
                 optimizer.zero_grad()
-        
+        # Sets the model in evaluation mode for validation
         model.eval()
         for batch in valid:
             input_ids = batch['input_ids'].to(device)
             attention_mask = batch['attention_mask'].to(device)
             labels = batch['labels'].to(device)
+           
             with torch.no_grad():
                 outputs = model(input_ids, attention_mask=attention_mask)
             logits = outputs.logits
             logits = logits.detach().cpu().numpy()
             label_ids = labels.to('cpu').numpy()
+            # Compute metrics on the validation set
             accuracy, macro_f1, precision =  calculate_metrics(logits, label_ids)
             wandb.log({"Validation Accuracy": accuracy, "Validation Macro F1": macro_f1, "Validation Precision": precision})
         model.train()
     # Prepare for training
     
+    # Sets the model in evaluation mode for testing
     model.eval()
     for batch in test:
         input_ids = batch['input_ids'].to(device)
