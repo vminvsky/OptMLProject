@@ -1,0 +1,12 @@
+ckpt: intfloat/e5-base
+dataset: sarcasm # can be 'sarcasm', 'sentiment'
+use_augmented_data: False
+approach: grounded # can be 'simple', 'grounded', 'taxonomy', 'grounded_norewrite'
+augmentation_model: gpt-3.5-turbo # can be gpt-3.5-turbo or gpt-4
+wandb_project: generation-evaluation # 'sarcasm_real_data' or 'generation-evaluation'
+wandb_entity: venia
+batch_size: 64
+lr: 2e-5
+num_epochs: 3
+weight_decay: 0
+SAM_ACTIVE: False

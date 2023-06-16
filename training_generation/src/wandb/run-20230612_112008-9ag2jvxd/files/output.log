@@ -1,0 +1,56 @@
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|                                                                                                                                                                                   | 0/348 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 33%|████████████████████████████████████████████████████████▎                                                                                                                | 116/348 [00:52<01:32,  2.50it/s]
+ 38%|██████████████████████████████████████████████████████████████████▏                                                                                                         | 5/13 [00:00<00:01,  7.72it/s]
+Traceback (most recent call last):████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊             | 12/13 [00:01<00:00,  6.49it/s]
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 142, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 188, in train
+    trainer.train()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 2021, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 2287, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 2993, in evaluate
+    output = eval_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 3281, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 132, in compute_metrics
+    result: Dict[str, float] = self._compute_metrics(
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 100, in _compute_metrics
+    precision = precision_score(y_true, y_pred)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/sklearn/metrics/_classification.py", line 1954, in precision_score
+    p, _, _, _ = precision_recall_fscore_support(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/sklearn/metrics/_classification.py", line 1573, in precision_recall_fscore_support
+    labels = _check_set_wise_labels(y_true, y_pred, average, labels, pos_label)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/sklearn/metrics/_classification.py", line 1391, in _check_set_wise_labels
+    raise ValueError(
+ValueError: Target is multilabel-indicator but average='binary'. Please choose another average setting, one of [None, 'micro', 'macro', 'weighted', 'samples'].
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

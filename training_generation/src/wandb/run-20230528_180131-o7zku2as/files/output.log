@@ -1,0 +1,16 @@
+  0%|                                                                                                                                                                                                                                                                                           | 0/630 [00:00<?, ?it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 113, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 192, in train
+    trainer.train()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1929, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 253, in training_step
+    loss = loss.mean()  # mean() to average on multi-gpu parallel (not distributed) training
+AttributeError: 'SequenceClassifierOutput' object has no attribute 'mean'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

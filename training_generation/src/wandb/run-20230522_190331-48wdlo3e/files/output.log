@@ -1,0 +1,116 @@
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|                                                                                                                                                                                                                                                                                           | 0/550 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+ 10%|###########################4                                                                                                                                                                                                                                                      | 55/550 [00:28<04:08,  1.99it/s]
+ 33%|############################################################################################                                                                                                                                                                                        | 4/12 [00:00<00:01,  4.96it/s]
+
+{'loss': 0.4609, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+ 10%|###########################4                                                                                                                                                                                                                                                      | 55/550 [00:31<04:08,  1.99it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+ 20%|#####################################################6                                                                                                                                                                                                                           | 108/550 [00:58<03:25,  2.15it/s]
+ 20%|######################################################6                                                                                                                                                                                                                          | 110/550 [00:59<03:11,  2.30it/s]
+
+ 50%|##########################################################################################################################################                                                                                                                                          | 6/12 [00:01<00:01,  4.78it/s]
+ 20%|######################################################6                                                                                                                                                                                                                          | 110/550 [01:02<03:11,  2.30it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 30%|################################################################################9                                                                                                                                                                                                | 163/550 [01:30<03:14,  1.99it/s]
+ 30%|#################################################################################8                                                                                                                                                                                               | 165/550 [01:31<02:57,  2.17it/s]
+
+ 58%|#################################################################################################################################################################                                                                                                                   | 7/12 [00:01<00:01,  4.73it/s]
+ 30%|#################################################################################8                                                                                                                                                                                               | 165/550 [01:34<02:57,  2.17it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 40%|############################################################################################################7                                                                                                                                                                    | 219/550 [02:03<02:49,  1.96it/s]
+ 40%|#############################################################################################################2                                                                                                                                                                   | 220/550 [02:03<02:38,  2.08it/s]
+
+ 67%|########################################################################################################################################################################################                                                                                            | 8/12 [00:01<00:00,  4.64it/s]
+ 40%|#############################################################################################################2                                                                                                                                                                   | 220/550 [02:06<02:38,  2.08it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+ 46%|############################################################################################################################5                                                                                                                                                    | 251/550 [02:24<02:31,  1.97it/s]Traceback (most recent call last):
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 107, in <module>
+    main()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 99, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 174, in train
+    trainer.train()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1996, in _inner_training_loop
+    self.optimizer.step()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/optimization.py", line 445, in step
+    exp_avg.mul_(beta1).add_(grad, alpha=(1.0 - beta1))
+KeyboardInterrupt

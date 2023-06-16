@@ -1,0 +1,44 @@
+work_dir: ${hydra:runtime.cwd}
+data_dir: ${work_dir}/data/
+output_dir: ${hydra:runtime.output_dir}
+file_dir: ${data_dir}/${experiment.task}
+ignore_warnings: false
+print_config: true
+seed: 123
+run_name: ${experiment.task}_${experiment.prompt_label}
+models: {}
+experiment:
+  debug: false
+  num_threads: 20
+  models:
+    dry_run: false
+    model_name: gpt-3.5-turbo
+    n_workers_per_key: 5
+    generation_parameters:
+      max_tokens: 700
+      temperature: 1
+      top_p: 1
+      frequency_penalty: 0.5
+      presence_penalty: 0.4
+      'n': 1
+  prompt_langchain:
+    num_generations: 10
+  label_name: labels
+  directions:
+  - sarcastic
+  - not-sarcastic
+  task: sarcasm
+  prompt_label: annotate
+  classify: true
+  prompt_style:
+    simple: false
+    grounding: false
+    taxonomy_generation: false
+    refinement: false
+local:
+  OPENAI_API_KEY:
+  - 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
+  - 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
+  - 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
+  old_keys:
+  - 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

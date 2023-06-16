@@ -1,0 +1,56 @@
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|                                                                                                                                                                              | 0/80 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+  9%|##############5                                                                                                                                                       | 7/80 [00:05<00:36,  1.98it/s]
+ 10%|################6                                                                                                                                                     | 8/80 [00:05<00:33,  2.16it/s]
+ 67%|##############################################################################################################6                                                       | 8/12 [00:01<00:00,  5.77it/s]
+
+ 10%|################6                                                                                                                                                     | 8/80 [00:08<00:33,  2.16it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+ 16%|##########################8                                                                                                                                          | 13/80 [00:15<01:04,  1.04it/s]
+ 20%|#################################                                                                                                                                    | 16/80 [00:16<00:38,  1.65it/s]
+ 42%|#####################################################################1                                                                                                | 5/12 [00:00<00:01,  6.63it/s]
+
+ 20%|#################################                                                                                                                                    | 16/80 [00:18<00:38,  1.65it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+ 28%|#############################################3                                                                                                                       | 22/80 [00:23<00:36,  1.59it/s]
+ 30%|#################################################5                                                                                                                   | 24/80 [00:24<00:27,  2.04it/s]
+ 58%|################################################################################################8                                                                     | 7/12 [00:01<00:00,  5.68it/s]
+
+ 30%|#################################################5                                                                                                                   | 24/80 [00:26<00:27,  2.04it/s]Traceback (most recent call last):
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 108, in <module>
+    main()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 100, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 174, in train
+    trainer.train()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 2021, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 2291, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial, metrics=metrics)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 2382, in _save_checkpoint
+    torch.save(self.optimizer.state_dict(), os.path.join(output_dir, OPTIMIZER_NAME))
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/serialization.py", line 441, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/serialization.py", line 668, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+KeyboardInterrupt

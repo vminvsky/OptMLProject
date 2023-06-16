@@ -1,0 +1,25 @@
+defaults:
+  - _self_
+  - hydra: inference
+  - models: openai
+  - experiment: sarcasm_annotate
+  - local: keys
+
+# path to work directory
+work_dir: ${hydra:runtime.cwd}
+# path to data directory
+data_dir: ${work_dir}/data/
+# path to output directory, created dynamically by hydra
+output_dir: ${hydra:runtime.output_dir}
+
+# path to file_dir
+file_dir: ${data_dir}/${experiment.task}
+
+ignore_warnings: False
+print_config: True
+
+# Seed used to seed everything in the beginning of the run script and to fix randomness in dataset
+seed: 123
+
+# experiment name – determines the logging folder's path
+run_name: ${experiment.task}_${experiment.prompt_label}

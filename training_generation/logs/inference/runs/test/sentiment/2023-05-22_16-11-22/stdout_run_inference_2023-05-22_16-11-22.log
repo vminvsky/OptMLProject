@@ -1,0 +1,28 @@
+[2023-05-22 16:11:22,726][__main__][INFO] - Generating data using 20 threads across 3 keys.
+[2023-05-22 16:11:53,183][openai][INFO] - error_code=None error_message='That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 8b25ddcb0911824fcac14f56f0b8c28e in your message.)' error_param=None error_type=server_error message='OpenAI API error received' stream_error=False
+[2023-05-22 16:11:53,183][langchain.chat_models.openai][WARNING] - Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised RateLimitError: That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 8b25ddcb0911824fcac14f56f0b8c28e in your message.).
+[2023-05-22 16:12:09,544][langchain.chat_models.openai][WARNING] - Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised APIError: HTTP code 502 from API (<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+).
+[2023-05-22 16:12:15,019][langchain.chat_models.openai][WARNING] - Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised APIError: HTTP code 502 from API (<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+).
+[2023-05-22 16:12:37,240][langchain.chat_models.openai][WARNING] - Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised APIError: HTTP code 502 from API (<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+).
+[2023-05-22 16:13:18,441][__main__][INFO] - Execution time: 116 (s)

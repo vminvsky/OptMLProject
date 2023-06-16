@@ -1,0 +1,645 @@
+2023-05-23 17:58:01,882 INFO    StreamThr :3280276 [internal.py:wandb_internal():86] W&B internal server running at pid: 3280276, started at: 2023-05-23 17:58:01.881725
+2023-05-23 17:58:01,883 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status
+2023-05-23 17:58:01,895 INFO    WriterThread:3280276 [datastore.py:open_for_write():85] open: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/run-n395rj0h.wandb
+2023-05-23 17:58:01,895 DEBUG   SenderThread:3280276 [sender.py:send():375] send: header
+2023-05-23 17:58:01,896 DEBUG   SenderThread:3280276 [sender.py:send():375] send: run
+2023-05-23 17:58:02,320 INFO    SenderThread:3280276 [dir_watcher.py:__init__():219] watching files in: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files
+2023-05-23 17:58:02,320 INFO    SenderThread:3280276 [sender.py:_start_run_threads():1124] run started: n395rj0h with start time 1684857481.886271
+2023-05-23 17:58:02,321 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:58:02,321 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:58:02,325 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: check_version
+2023-05-23 17:58:02,325 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: check_version
+2023-05-23 17:58:02,426 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: run_start
+2023-05-23 17:58:02,427 DEBUG   HandlerThread:3280276 [system_info.py:__init__():31] System info init
+2023-05-23 17:58:02,427 DEBUG   HandlerThread:3280276 [system_info.py:__init__():46] System info init done
+2023-05-23 17:58:02,427 INFO    HandlerThread:3280276 [system_monitor.py:start():181] Starting system monitor
+2023-05-23 17:58:02,428 INFO    SystemMonitor:3280276 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-23 17:58:02,428 INFO    HandlerThread:3280276 [system_monitor.py:probe():201] Collecting system info
+2023-05-23 17:58:02,428 INFO    SystemMonitor:3280276 [interfaces.py:start():190] Started cpu monitoring
+2023-05-23 17:58:02,429 INFO    SystemMonitor:3280276 [interfaces.py:start():190] Started disk monitoring
+2023-05-23 17:58:02,429 INFO    SystemMonitor:3280276 [interfaces.py:start():190] Started gpu monitoring
+2023-05-23 17:58:02,430 INFO    SystemMonitor:3280276 [interfaces.py:start():190] Started memory monitoring
+2023-05-23 17:58:02,431 INFO    SystemMonitor:3280276 [interfaces.py:start():190] Started network monitoring
+2023-05-23 17:58:02,475 DEBUG   HandlerThread:3280276 [system_info.py:probe():195] Probing system
+2023-05-23 17:58:02,476 DEBUG   HandlerThread:3280276 [git.py:repo():40] git repository is invalid
+2023-05-23 17:58:02,476 DEBUG   HandlerThread:3280276 [system_info.py:probe():240] Probing system done
+2023-05-23 17:58:02,476 DEBUG   HandlerThread:3280276 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-128-generic-x86_64-with-glibc2.31', 'python': '3.10.10', 'heartbeatAt': '2023-05-23T15:58:02.475967', 'startedAt': '2023-05-23T15:58:01.870179', 'docker': None, 'cuda': '10.2.89', 'args': (), 'state': 'running', 'program': '/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py', 'codePath': 'finetune_model.py', 'host': 'iccluster039', 'username': 'veselovs', 'executable': '/scratch/venia/python/miniconda3/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 1725.0194999999997, 'min': 1200.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 1402.396, 'min': 1200.0, 'max': 3300.0}, {'current': 2494.219, 'min': 1200.0, 'max': 3300.0}, {'current': 1473.583, 'min': 1200.0, 'max': 3300.0}, {'current': 1696.327, 'min': 1200.0, 'max': 3300.0}, {'current': 1197.225, 'min': 1200.0, 'max': 3300.0}, {'current': 1263.606, 'min': 1200.0, 'max': 3300.0}, {'current': 1197.643, 'min': 1200.0, 'max': 3300.0}, {'current': 2081.143, 'min': 1200.0, 'max': 3300.0}, {'current': 1476.629, 'min': 1200.0, 'max': 3300.0}, {'current': 2367.874, 'min': 1200.0, 'max': 3300.0}, {'current': 2494.213, 'min': 1200.0, 'max': 3300.0}, {'current': 1328.358, 'min': 1200.0, 'max': 3300.0}, {'current': 1587.995, 'min': 1200.0, 'max': 3300.0}, {'current': 2494.214, 'min': 1200.0, 'max': 3300.0}, {'current': 2048.065, 'min': 1200.0, 'max': 3300.0}, {'current': 2904.62, 'min': 1200.0, 'max': 3300.0}, {'current': 2136.14, 'min': 1200.0, 'max': 3300.0}, {'current': 2049.666, 'min': 1200.0, 'max': 3300.0}, {'current': 2121.374, 'min': 1200.0, 'max': 3300.0}, {'current': 2141.509, 'min': 1200.0, 'max': 3300.0}, {'current': 2188.692, 'min': 1200.0, 'max': 3300.0}, {'current': 1569.955, 'min': 1200.0, 'max': 3300.0}, {'current': 2480.709, 'min': 1200.0, 'max': 3300.0}, {'current': 2210.513, 'min': 1200.0, 'max': 3300.0}, {'current': 1446.278, 'min': 1200.0, 'max': 3300.0}, {'current': 2494.216, 'min': 1200.0, 'max': 3300.0}, {'current': 1414.323, 'min': 1200.0, 'max': 3300.0}, {'current': 1695.824, 'min': 1200.0, 'max': 3300.0}, {'current': 1197.605, 'min': 1200.0, 'max': 3300.0}, {'current': 1271.13, 'min': 1200.0, 'max': 3300.0}, {'current': 1221.565, 'min': 1200.0, 'max': 3300.0}, {'current': 1974.988, 'min': 1200.0, 'max': 3300.0}, {'current': 2191.666, 'min': 1200.0, 'max': 3300.0}, {'current': 2393.844, 'min': 1200.0, 'max': 3300.0}, {'current': 2494.57, 'min': 1200.0, 'max': 3300.0}, {'current': 1325.696, 'min': 1200.0, 'max': 3300.0}, {'current': 1700.475, 'min': 1200.0, 'max': 3300.0}, {'current': 2494.217, 'min': 1200.0, 'max': 3300.0}, {'current': 2394.491, 'min': 1200.0, 'max': 3300.0}, {'current': 3085.61, 'min': 1200.0, 'max': 3300.0}, {'current': 2494.245, 'min': 1200.0, 'max': 3300.0}, {'current': 2266.281, 'min': 1200.0, 'max': 3300.0}, {'current': 2394.489, 'min': 1200.0, 'max': 3300.0}, {'current': 2393.758, 'min': 1200.0, 'max': 3300.0}, {'current': 2494.233, 'min': 1200.0, 'max': 3300.0}, {'current': 1699.595, 'min': 1200.0, 'max': 3300.0}, {'current': 2477.387, 'min': 1200.0, 'max': 3300.0}, {'current': 2394.476, 'min': 1200.0, 'max': 3300.0}], 'disk': {'total': 216.15381240844727, 'used': 39.75861358642578}, 'gpu': 'NVIDIA GeForce GTX TITAN X', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}], 'memory': {'total': 251.80284881591797}}
+2023-05-23 17:58:02,476 INFO    HandlerThread:3280276 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-23 17:58:02,476 INFO    HandlerThread:3280276 [system_monitor.py:probe():214] Publishing system info
+2023-05-23 17:58:02,476 DEBUG   HandlerThread:3280276 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-23 17:58:02,477 DEBUG   HandlerThread:3280276 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-23 17:58:02,477 DEBUG   HandlerThread:3280276 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-23 17:58:03,323 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:58:03,341 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/requirements.txt
+2023-05-23 17:58:03,342 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/conda-environment.yaml
+2023-05-23 17:58:06,139 DEBUG   HandlerThread:3280276 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-23 17:58:06,140 INFO    HandlerThread:3280276 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-23 17:58:06,141 DEBUG   SenderThread:3280276 [sender.py:send():375] send: files
+2023-05-23 17:58:06,141 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-23 17:58:06,151 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 17:58:06,152 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 17:58:06,322 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/conda-environment.yaml
+2023-05-23 17:58:06,322 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-metadata.json
+2023-05-23 17:58:06,332 DEBUG   SenderThread:3280276 [sender.py:send():375] send: telemetry
+2023-05-23 17:58:06,335 DEBUG   SenderThread:3280276 [sender.py:send():375] send: config
+2023-05-23 17:58:06,336 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:06,336 DEBUG   SenderThread:3280276 [sender.py:send():375] send: telemetry
+2023-05-23 17:58:06,337 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:06,337 WARNING SenderThread:3280276 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-05-23 17:58:06,337 DEBUG   SenderThread:3280276 [sender.py:send():375] send: config
+2023-05-23 17:58:06,338 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:06,338 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:06,339 WARNING SenderThread:3280276 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-05-23 17:58:06,621 INFO    wandb-upload_0:3280276 [upload_job.py:push():137] Uploaded file /tmp/tmpqpir7z1xwandb/n7b6l97w-wandb-metadata.json
+2023-05-23 17:58:06,953 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:07,322 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:09,323 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:11,324 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:12,535 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:13,325 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:15,326 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:17,327 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:17,981 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:19,328 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:21,152 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 17:58:21,153 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 17:58:21,329 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:23,226 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:23,330 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:25,331 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:27,332 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:27,494 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:58:27,496 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:58:27,497 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:27,497 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:27,498 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:27,499 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 17:58:27,500 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:58:27,501 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:58:28,306 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:28,332 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:58:29,333 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:30,333 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:30,744 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:58:30,745 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:58:30,746 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:30,746 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 1 < 2. Dropping entry: {'eval/loss': 0.6705950208515562, 'eval/f1': 0.49454816126176876, 'eval/roc_auc': 0.514485044784909, 'eval/accuracy': 0.6426666666666667, 'eval/runtime': 3.2449, 'eval/samples_per_second': 231.131, 'eval/steps_per_second': 3.698, 'train/epoch': 1.0, 'train/global_step': 32, '_timestamp': 1684857510.744028}.
+2023-05-23 17:58:30,746 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:30,747 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:30,748 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:30,748 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:30,748 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:30,748 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 17:58:30,748 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 17:58:30,749 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:58:30,749 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:58:31,334 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:58:31,334 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:32,334 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:33,335 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:33,755 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:34,335 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/config.yaml
+2023-05-23 17:58:36,152 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 17:58:36,153 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 17:58:37,337 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:39,187 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:39,337 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:41,338 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:43,340 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:44,791 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:45,340 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:47,342 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:49,342 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:50,286 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:51,153 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 17:58:51,154 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 17:58:51,343 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:53,344 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:55,345 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:55,799 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:58:57,346 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:58:57,564 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:58:57,565 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:58:57,565 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 2 < 3. Dropping entry: {'train/loss': 0.6773, 'train/learning_rate': 1.6000000000000003e-05, 'train/epoch': 2.0, 'train/global_step': 64, '_timestamp': 1684857537.5642686}.
+2023-05-23 17:58:57,567 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 17:58:57,568 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:58:57,569 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:58:58,347 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:58:59,347 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:00,348 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:00,803 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:00,813 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:00,823 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:00,824 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 2 < 4. Dropping entry: {'eval/loss': 0.7999283541848893, 'eval/f1': 0.47486144974687844, 'eval/roc_auc': 0.5092894254423875, 'eval/accuracy': 0.5133333333333333, 'eval/runtime': 3.2444, 'eval/samples_per_second': 231.168, 'eval/steps_per_second': 3.699, 'train/epoch': 2.0, 'train/global_step': 64, '_timestamp': 1684857540.8130827}.
+2023-05-23 17:59:00,824 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 17:59:00,825 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:59:00,827 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:59:01,348 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:59:01,348 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:02,349 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:02,431 DEBUG   SystemMonitor:3280276 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-23 17:59:02,434 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 17:59:03,349 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:05,350 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:06,153 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 17:59:06,154 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 17:59:06,320 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:07,351 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:09,352 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:11,353 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:11,971 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:13,354 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:15,355 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:16,990 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:17,356 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:19,357 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:21,154 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 17:59:21,155 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 17:59:21,358 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:22,541 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:23,359 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:24,946 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:24,947 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:24,948 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 3 < 5. Dropping entry: {'train/loss': 0.6728, 'train/learning_rate': 1.4e-05, 'train/epoch': 3.0, 'train/global_step': 96, '_timestamp': 1684857564.9459786}.
+2023-05-23 17:59:24,949 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 17:59:24,950 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:59:24,950 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:59:25,360 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:59:25,360 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:26,360 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:27,361 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:27,705 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:28,236 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:28,237 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:28,238 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 3 < 6. Dropping entry: {'eval/loss': 0.9079283541848894, 'eval/f1': 0.4039600573053649, 'eval/roc_auc': 0.5084820622904418, 'eval/accuracy': 0.4053333333333333, 'eval/runtime': 3.2859, 'eval/samples_per_second': 228.25, 'eval/steps_per_second': 3.652, 'train/epoch': 3.0, 'train/global_step': 96, '_timestamp': 1684857568.2360518}.
+2023-05-23 17:59:28,239 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 17:59:28,239 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:59:28,242 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:59:28,361 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:59:29,362 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:30,362 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:31,363 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:32,436 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 17:59:33,025 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:33,364 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:35,365 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:36,153 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 17:59:36,154 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 17:59:37,366 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:38,430 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:39,367 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:41,368 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:43,369 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:43,876 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:45,369 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:47,370 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:49,371 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:49,439 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:51,153 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 17:59:51,154 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 17:59:51,372 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:51,910 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:51,911 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:51,911 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 4 < 7. Dropping entry: {'train/loss': 0.6704, 'train/learning_rate': 1.2e-05, 'train/epoch': 4.0, 'train/global_step': 128, '_timestamp': 1684857591.9100513}.
+2023-05-23 17:59:51,912 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 17:59:51,912 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:59:51,913 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:59:52,372 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:59:53,373 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:54,373 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:54,601 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 17:59:55,127 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:55,128 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 17:59:55,129 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 4 < 8. Dropping entry: {'eval/loss': 0.6799283541848894, 'eval/f1': 0.5243520233200114, 'eval/roc_auc': 0.5241449074381892, 'eval/accuracy': 0.6333333333333333, 'eval/runtime': 3.2133, 'eval/samples_per_second': 233.404, 'eval/steps_per_second': 3.734, 'train/epoch': 4.0, 'train/global_step': 128, '_timestamp': 1684857595.1269002}.
+2023-05-23 17:59:55,129 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 17:59:55,131 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 17:59:55,133 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 17:59:55,374 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 17:59:55,374 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:56,374 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:57,375 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:59,376 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 17:59:59,928 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:01,376 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:02,472 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 18:00:03,377 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:05,378 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:05,478 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:06,153 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:00:06,154 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:00:07,379 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:09,380 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:10,939 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:11,381 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:13,381 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:15,382 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:16,620 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:17,383 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:19,035 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:00:19,036 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:00:19,036 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 5 < 9. Dropping entry: {'train/loss': 0.6724, 'train/learning_rate': 1e-05, 'train/epoch': 5.0, 'train/global_step': 160, '_timestamp': 1684857619.0352845}.
+2023-05-23 18:00:19,037 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:00:19,037 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:00:19,039 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:00:19,384 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:00:19,385 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:20,384 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:21,153 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:00:21,154 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:00:21,385 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:21,882 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:22,380 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:00:22,381 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:00:22,382 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 5 < 10. Dropping entry: {'eval/loss': 0.6812616875182227, 'eval/f1': 0.5436507936507937, 'eval/roc_auc': 0.5331208860098213, 'eval/accuracy': 0.632, 'eval/runtime': 3.341, 'eval/samples_per_second': 224.484, 'eval/steps_per_second': 3.592, 'train/epoch': 5.0, 'train/global_step': 160, '_timestamp': 1684857622.3804574}.
+2023-05-23 18:00:22,383 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:00:22,385 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:00:22,385 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:00:22,385 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:00:23,386 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:24,386 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:25,387 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:27,166 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:27,388 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:29,389 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:31,390 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:32,354 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:32,440 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 18:00:33,391 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:35,392 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:36,155 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:00:36,156 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:00:37,393 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:39,388 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:41,394 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:43,395 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:45,105 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:45,396 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:46,139 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:00:46,140 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:00:46,140 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 6 < 11. Dropping entry: {'train/loss': 0.6708, 'train/learning_rate': 8.000000000000001e-06, 'train/epoch': 6.0, 'train/global_step': 192, '_timestamp': 1684857646.1395829}.
+2023-05-23 18:00:46,141 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:00:46,142 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:00:46,143 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:00:46,397 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:00:47,397 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:48,398 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:49,398 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:49,604 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:00:49,605 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:00:49,605 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 6 < 12. Dropping entry: {'eval/loss': 0.742595020851556, 'eval/f1': 0.5130420054200543, 'eval/roc_auc': 0.5250947464404783, 'eval/accuracy': 0.5706666666666667, 'eval/runtime': 3.46, 'eval/samples_per_second': 216.765, 'eval/steps_per_second': 3.468, 'train/epoch': 6.0, 'train/global_step': 192, '_timestamp': 1684857649.6042812}.
+2023-05-23 18:00:49,606 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:00:49,607 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:00:49,610 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:00:50,399 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:00:50,611 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:51,399 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:51,441 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:00:51,442 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:00:52,399 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:53,400 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:55,401 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:55,735 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:00:57,402 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:00:59,403 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:01,334 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:01,404 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:02,442 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 18:01:03,405 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:05,406 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:06,160 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:01:06,161 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:01:06,902 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:07,407 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:09,408 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:11,409 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:12,571 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:13,410 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:13,588 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:01:13,589 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:01:13,590 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 7 < 13. Dropping entry: {'train/loss': 0.669, 'train/learning_rate': 6e-06, 'train/epoch': 7.0, 'train/global_step': 224, '_timestamp': 1684857673.5886703}.
+2023-05-23 18:01:13,590 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:01:13,591 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:01:13,593 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:01:14,410 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:01:14,410 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:15,411 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:16,830 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:01:16,832 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:01:16,832 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 7 < 14. Dropping entry: {'eval/loss': 0.8852616875182227, 'eval/f1': 0.4244381675756996, 'eval/roc_auc': 0.5179234619731956, 'eval/accuracy': 0.428, 'eval/runtime': 3.2369, 'eval/samples_per_second': 231.704, 'eval/steps_per_second': 3.707, 'train/epoch': 7.0, 'train/global_step': 224, '_timestamp': 1684857676.830987}.
+2023-05-23 18:01:16,833 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:01:16,834 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:01:16,835 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:01:17,411 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:01:17,412 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:17,836 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:18,412 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:19,412 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:21,160 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:01:21,161 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:01:21,413 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:23,122 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:23,414 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:25,415 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:27,416 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:28,660 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:29,417 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:31,418 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:32,483 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 18:01:33,418 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:34,260 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:35,419 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:36,161 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:01:36,161 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:01:37,420 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:39,421 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:39,777 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:40,784 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:01:40,784 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:01:40,785 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 8 < 15. Dropping entry: {'train/loss': 0.6684, 'train/learning_rate': 4.000000000000001e-06, 'train/epoch': 8.0, 'train/global_step': 256, '_timestamp': 1684857700.7839558}.
+2023-05-23 18:01:40,786 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:01:40,787 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:01:40,788 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:01:41,422 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:01:41,423 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:42,423 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:43,423 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:44,029 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:01:44,031 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:01:44,032 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:01:44,047 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 8 < 16. Dropping entry: {'eval/loss': 0.874595020851556, 'eval/f1': 0.43064919515524386, 'eval/roc_auc': 0.5143520673245885, 'eval/accuracy': 0.43866666666666665, 'eval/runtime': 3.2402, 'eval/samples_per_second': 231.464, 'eval/steps_per_second': 3.703, 'train/epoch': 8.0, 'train/global_step': 256, '_timestamp': 1684857704.0293753}.
+2023-05-23 18:01:44,047 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:01:44,050 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:01:44,424 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:01:45,052 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:45,424 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:46,425 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:47,425 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:49,426 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:50,226 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:51,161 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:01:51,161 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:01:51,427 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:53,428 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:55,429 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:55,662 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:01:57,430 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:01:59,431 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:00,859 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:01,432 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:02,447 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 18:02:03,433 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:05,434 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:06,161 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:02:06,162 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:02:06,326 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:07,435 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:07,501 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:07,502 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:07,502 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 9 < 17. Dropping entry: {'train/loss': 0.6692, 'train/learning_rate': 2.0000000000000003e-06, 'train/epoch': 9.0, 'train/global_step': 288, '_timestamp': 1684857727.5008771}.
+2023-05-23 18:02:07,503 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:02:07,503 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:02:07,506 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:08,435 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:09,436 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:10,436 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:10,744 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:10,745 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:10,746 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 9 < 18. Dropping entry: {'eval/loss': 0.794595020851556, 'eval/f1': 0.48959297514039724, 'eval/roc_auc': 0.5159193016783655, 'eval/accuracy': 0.5186666666666667, 'eval/runtime': 3.2391, 'eval/samples_per_second': 231.544, 'eval/steps_per_second': 3.705, 'train/epoch': 9.0, 'train/global_step': 288, '_timestamp': 1684857730.7443597}.
+2023-05-23 18:02:10,746 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:02:10,748 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:02:10,750 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:11,436 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:11,437 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:11,751 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:12,437 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:13,437 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:15,438 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:16,947 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:17,439 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:19,440 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:21,161 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:02:21,162 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:02:21,441 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:22,383 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:23,442 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:25,443 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:27,444 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:28,024 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:29,445 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:31,446 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:32,448 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 18:02:33,450 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:33,662 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:34,703 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:34,703 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:34,704 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 10 < 19. Dropping entry: {'train/loss': 0.6684, 'train/learning_rate': 0.0, 'train/epoch': 10.0, 'train/global_step': 320, '_timestamp': 1684857754.703031}.
+2023-05-23 18:02:34,705 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:02:34,705 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:02:34,705 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:35,451 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:35,451 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:36,161 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-23 18:02:36,162 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: stop_status
+2023-05-23 18:02:36,451 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:37,452 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:37,911 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:37,912 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:37,913 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 10 < 20. Dropping entry: {'eval/loss': 0.814595020851556, 'eval/f1': 0.4747625256099832, 'eval/roc_auc': 0.5166126841500365, 'eval/accuracy': 0.49866666666666665, 'eval/runtime': 3.203, 'eval/samples_per_second': 234.152, 'eval/steps_per_second': 3.746, 'train/epoch': 10.0, 'train/global_step': 320, '_timestamp': 1684857757.911266}.
+2023-05-23 18:02:37,913 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:02:37,915 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:02:37,916 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:38,452 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:38,917 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:39,453 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:40,453 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:40,477 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:40,479 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:40,480 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 10 < 21. Dropping entry: {'train/train_runtime': 274.297, 'train/train_samples_per_second': 72.914, 'train/train_steps_per_second': 1.167, 'train/total_flos': 1068888662400000.0, 'train/train_loss': 0.672868549823761, 'train/epoch': 10.0, 'train/global_step': 320, '_timestamp': 1684857760.477067}.
+2023-05-23 18:02:40,480 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:40,481 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:40,483 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:40,483 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:40,483 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:40,483 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:02:40,484 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:02:40,484 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:41,454 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:41,454 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:42,454 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:43,455 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:43,589 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:44,428 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:44,428 WARNING HandlerThread:3280276 [handler.py:handle_request_partial_history():551] Step 10 < 22. Dropping entry: {'eval/loss': 0.6705950208515562, 'eval/f1': 0.49454816126176876, 'eval/roc_auc': 0.514485044784909, 'eval/accuracy': 0.6426666666666667, 'eval/runtime': 3.1065, 'eval/samples_per_second': 241.425, 'eval/steps_per_second': 3.863, 'train/epoch': 10.0, 'train/global_step': 320, '_timestamp': 1684857763.5890057}.
+2023-05-23 18:02:44,429 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:02:44,430 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:02:44,431 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:44,431 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:44,455 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:45,207 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:45,425 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-23 18:02:45,441 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-23 18:02:45,456 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:45,456 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/media/table/classification_report_23_f8e13fc6f82418e438d9.table.json
+2023-05-23 18:02:45,457 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/media
+2023-05-23 18:02:45,457 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/media/table
+2023-05-23 18:02:45,903 INFO    wandb-upload_0:3280276 [upload_job.py:push():137] Uploaded file /tmp/tmpqpir7z1xwandb/nxwurnvk-media/table/classification_report_23_f8e13fc6f82418e438d9.table.json
+2023-05-23 18:02:46,443 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-23 18:02:46,456 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:49,433 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:50,173 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:50,173 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:50,173 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:50,173 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:50,173 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:50,174 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:50,174 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:50,174 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:02:50,174 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:02:50,175 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:50,175 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: log_artifact
+2023-05-23 18:02:50,459 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:51,444 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-23 18:02:51,459 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:51,716 INFO    wandb-upload_0:3280276 [upload_job.py:push():95] Uploaded file /home/veselovs/.local/share/wandb/artifacts/staging/tmpk1wkolpb
+2023-05-23 18:02:52,895 INFO    SenderThread:3280276 [sender.py:send_request_log_artifact():1438] logged artifact run-n395rj0h-classification_report - {'id': 'QXJ0aWZhY3Q6NDYzNTkwMDUz', 'digest': '4494d21d43580b5dc9aaae92e3e69e9e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjcxMzEwMjQy', 'latestArtifact': None}, 'version': 'latest'}
+2023-05-23 18:02:52,896 DEBUG   SenderThread:3280276 [sender.py:send():375] send: files
+2023-05-23 18:02:52,896 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file media/table/classification_report_23_f8e13fc6f82418e438d9.table.json with policy now
+2023-05-23 18:02:52,896 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:52,897 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:52,897 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:52,897 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:52,897 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:52,897 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:52,897 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:52,898 DEBUG   SenderThread:3280276 [sender.py:send():375] send: metric
+2023-05-23 18:02:52,898 DEBUG   SenderThread:3280276 [sender.py:send():375] send: history
+2023-05-23 18:02:52,898 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: summary_record
+2023-05-23 18:02:52,898 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:52,899 DEBUG   SenderThread:3280276 [sender.py:send():375] send: telemetry
+2023-05-23 18:02:52,899 DEBUG   SenderThread:3280276 [sender.py:send():375] send: exit
+2023-05-23 18:02:52,899 INFO    SenderThread:3280276 [sender.py:send_exit():598] handling exit code: 0
+2023-05-23 18:02:52,899 INFO    SenderThread:3280276 [sender.py:send_exit():600] handling runtime: 283
+2023-05-23 18:02:53,118 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:53,119 INFO    SenderThread:3280276 [sender.py:send_exit():606] send defer
+2023-05-23 18:02:53,119 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: poll_exit
+2023-05-23 18:02:53,119 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:53,120 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-23 18:02:53,120 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:53,120 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-23 18:02:53,121 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 1
+2023-05-23 18:02:53,121 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:53,121 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-23 18:02:53,121 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:53,121 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-23 18:02:53,122 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 2
+2023-05-23 18:02:53,122 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:53,122 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-23 18:02:53,122 INFO    HandlerThread:3280276 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-23 18:02:53,122 DEBUG   SystemMonitor:3280276 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-23 18:02:53,123 INFO    HandlerThread:3280276 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-23 18:02:53,123 DEBUG   SystemMonitor:3280276 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-23 18:02:53,124 INFO    HandlerThread:3280276 [interfaces.py:finish():202] Joined disk monitor
+2023-05-23 18:02:53,415 INFO    HandlerThread:3280276 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-23 18:02:53,416 INFO    HandlerThread:3280276 [interfaces.py:finish():202] Joined memory monitor
+2023-05-23 18:02:53,416 INFO    HandlerThread:3280276 [interfaces.py:finish():202] Joined network monitor
+2023-05-23 18:02:53,417 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:53,417 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-23 18:02:53,418 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 3
+2023-05-23 18:02:53,418 DEBUG   SenderThread:3280276 [sender.py:send():375] send: stats
+2023-05-23 18:02:53,418 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:53,419 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-23 18:02:53,419 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:53,419 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-23 18:02:53,420 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 4
+2023-05-23 18:02:53,420 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:53,420 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-23 18:02:53,420 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:53,420 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-23 18:02:53,420 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 5
+2023-05-23 18:02:53,420 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:53,421 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-23 18:02:53,421 DEBUG   SenderThread:3280276 [sender.py:send():375] send: summary
+2023-05-23 18:02:53,422 INFO    SenderThread:3280276 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-23 18:02:53,422 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:53,422 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-23 18:02:53,423 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 6
+2023-05-23 18:02:53,423 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:53,423 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-23 18:02:53,423 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:53,423 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-23 18:02:53,429 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: status_report
+2023-05-23 18:02:53,460 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:53,602 INFO    wandb-upload_0:3280276 [upload_job.py:push():137] Uploaded file /tmp/tmpqpir7z1xwandb/qhgci7kn-media/table/classification_report_23_f8e13fc6f82418e438d9.table.json
+2023-05-23 18:02:53,683 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 7
+2023-05-23 18:02:53,683 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:53,683 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-23 18:02:53,683 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:53,683 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-23 18:02:54,461 INFO    Thread-52 :3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/config.yaml
+2023-05-23 18:02:55,887 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 8
+2023-05-23 18:02:55,888 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:55,888 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-23 18:02:55,888 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:55,888 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-23 18:02:55,889 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 9
+2023-05-23 18:02:55,889 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:55,889 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-23 18:02:55,890 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:55,890 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-23 18:02:55,890 INFO    SenderThread:3280276 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-23 18:02:56,445 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-23 18:02:56,463 INFO    SenderThread:3280276 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:56,463 INFO    SenderThread:3280276 [dir_watcher.py:finish():395] scan: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files
+2023-05-23 18:02:56,481 INFO    SenderThread:3280276 [dir_watcher.py:finish():409] scan save: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json wandb-summary.json
+2023-05-23 18:02:56,482 INFO    SenderThread:3280276 [dir_watcher.py:finish():409] scan save: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/conda-environment.yaml conda-environment.yaml
+2023-05-23 18:02:56,486 INFO    SenderThread:3280276 [dir_watcher.py:finish():409] scan save: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/config.yaml config.yaml
+2023-05-23 18:02:56,491 INFO    SenderThread:3280276 [dir_watcher.py:finish():409] scan save: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log output.log
+2023-05-23 18:02:56,493 INFO    SenderThread:3280276 [dir_watcher.py:finish():409] scan save: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-metadata.json wandb-metadata.json
+2023-05-23 18:02:56,497 INFO    SenderThread:3280276 [dir_watcher.py:finish():409] scan save: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/requirements.txt requirements.txt
+2023-05-23 18:02:56,505 INFO    SenderThread:3280276 [dir_watcher.py:finish():409] scan save: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/media/table/classification_report_23_f8e13fc6f82418e438d9.table.json media/table/classification_report_23_f8e13fc6f82418e438d9.table.json
+2023-05-23 18:02:56,505 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 10
+2023-05-23 18:02:56,506 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:56,506 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-23 18:02:56,506 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:56,507 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-23 18:02:56,507 INFO    SenderThread:3280276 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-23 18:02:56,938 INFO    wandb-upload_1:3280276 [upload_job.py:push():137] Uploaded file /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/conda-environment.yaml
+2023-05-23 18:02:56,958 INFO    wandb-upload_0:3280276 [upload_job.py:push():137] Uploaded file /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/wandb-summary.json
+2023-05-23 18:02:56,992 INFO    wandb-upload_2:3280276 [upload_job.py:push():137] Uploaded file /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/config.yaml
+2023-05-23 18:02:57,024 INFO    wandb-upload_4:3280276 [upload_job.py:push():137] Uploaded file /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/requirements.txt
+2023-05-23 18:02:57,025 INFO    wandb-upload_3:3280276 [upload_job.py:push():137] Uploaded file /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/files/output.log
+2023-05-23 18:02:57,225 INFO    Thread-51 (_thread_body):3280276 [sender.py:transition_state():626] send defer: 11
+2023-05-23 18:02:57,226 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:57,226 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-23 18:02:57,227 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:57,227 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-23 18:02:57,227 INFO    SenderThread:3280276 [file_pusher.py:join():172] waiting for file pusher
+2023-05-23 18:02:57,227 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 12
+2023-05-23 18:02:57,227 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:57,228 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-23 18:02:57,228 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:57,228 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-23 18:02:57,837 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 13
+2023-05-23 18:02:57,838 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:57,838 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-23 18:02:57,838 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:57,838 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-23 18:02:57,838 INFO    SenderThread:3280276 [sender.py:transition_state():626] send defer: 14
+2023-05-23 18:02:57,839 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: defer
+2023-05-23 18:02:57,839 DEBUG   SenderThread:3280276 [sender.py:send():375] send: final
+2023-05-23 18:02:57,839 INFO    HandlerThread:3280276 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-23 18:02:57,839 DEBUG   SenderThread:3280276 [sender.py:send():375] send: footer
+2023-05-23 18:02:57,840 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: defer
+2023-05-23 18:02:57,840 INFO    SenderThread:3280276 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-23 18:02:57,840 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-23 18:02:57,841 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: server_info
+2023-05-23 18:02:57,841 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-23 18:02:57,841 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: poll_exit
+2023-05-23 18:02:57,841 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-23 18:02:57,842 DEBUG   SenderThread:3280276 [sender.py:send_request():402] send_request: server_info
+2023-05-23 18:02:58,005 DEBUG   HandlerThread:3280276 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-23 18:02:58,005 INFO    HandlerThread:3280276 [handler.py:finish():845] shutting down handler
+2023-05-23 18:02:58,841 INFO    WriterThread:3280276 [datastore.py:close():298] close: /scratch/venia/socialgpt/venia_worker_vs_gpt/src/wandb/run-20230523_175801-n395rj0h/run-n395rj0h.wandb
+2023-05-23 18:02:59,004 INFO    SenderThread:3280276 [sender.py:finish():1550] shutting down sender
+2023-05-23 18:02:59,004 INFO    SenderThread:3280276 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-23 18:02:59,004 INFO    SenderThread:3280276 [file_pusher.py:join():172] waiting for file pusher

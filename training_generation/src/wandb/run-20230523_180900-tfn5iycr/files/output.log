@@ -1,0 +1,230 @@
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|                                                                                                                                                                             | 0/470 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 10%|################4                                                                                                                                                   | 47/470 [00:32<04:45,  1.48it/s]
+ 25%|#########################################5                                                                                                                            | 3/12 [00:00<00:01,  5.30it/s]
+
+ 83%|#########################################################################################################################################5                           | 10/12 [00:02<00:00,  3.49it/s]
+
+ 10%|################4                                                                                                                                                   | 47/470 [00:36<04:45,  1.48it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 20%|################################8                                                                                                                                   | 94/470 [01:13<04:08,  1.51it/s]
+ 25%|#########################################5                                                                                                                            | 3/12 [00:00<00:01,  5.24it/s]
+
+ 83%|#########################################################################################################################################5                           | 10/12 [00:02<00:00,  3.59it/s]
+
+ 20%|################################8                                                                                                                                   | 94/470 [01:16<04:08,  1.51it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 30%|################################################5                                                                                                                  | 140/470 [01:49<03:52,  1.42it/s]
+ 30%|################################################9                                                                                                                  | 141/470 [01:50<03:40,  1.49it/s]
+
+ 50%|###################################################################################                                                                                   | 6/12 [00:01<00:01,  3.80it/s]
+ 30%|################################################9                                                                                                                  | 141/470 [01:53<03:40,  1.49it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 40%|################################################################8                                                                                                  | 187/470 [02:28<03:23,  1.39it/s]
+ 40%|#################################################################2                                                                                                 | 188/470 [02:28<03:11,  1.47it/s]
+
+ 42%|#####################################################################1                                                                                                | 5/12 [00:01<00:01,  4.11it/s]
+ 40%|#################################################################2                                                                                                 | 188/470 [02:32<03:11,  1.47it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 50%|#################################################################################5                                                                                 | 235/470 [03:06<02:37,  1.50it/s]
+ 42%|#####################################################################1                                                                                                | 5/12 [00:01<00:01,  4.11it/s]
+
+{'loss': 0.6777, 'learning_rate': 1e-05, 'epoch': 5.0}
+ 50%|#################################################################################5                                                                                 | 235/470 [03:10<02:37,  1.50it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 60%|#################################################################################################8                                                                 | 282/470 [03:44<02:03,  1.52it/s]
+  0%|                                                                                                                                                                              | 0/12 [00:00<?, ?it/s]
+
+
+ 75%|############################################################################################################################5                                         | 9/12 [00:02<00:00,  3.91it/s]
+ 60%|#################################################################################################8                                                                 | 282/470 [03:47<02:03,  1.52it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 70%|##################################################################################################################1                                                | 329/470 [04:21<01:34,  1.50it/s]
+{'loss': 0.6767, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 70%|##################################################################################################################1                                                | 329/470 [04:24<01:34,  1.50it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 80%|#################################################################################################################################7                                 | 374/470 [04:58<01:09,  1.39it/s]
+ 80%|##################################################################################################################################4                                | 376/470 [05:00<01:04,  1.45it/s]
+
+ 33%|#######################################################3                                                                                                              | 4/12 [00:00<00:01,  4.65it/s]
+ 80%|##################################################################################################################################4                                | 376/470 [05:03<01:04,  1.45it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 90%|##################################################################################################################################################3                | 422/470 [05:37<00:33,  1.45it/s]
+ 90%|##################################################################################################################################################7                | 423/470 [05:37<00:31,  1.51it/s]
+ 50%|###################################################################################                                                                                   | 6/12 [00:01<00:01,  3.90it/s]
+
+ 90%|##################################################################################################################################################7                | 423/470 [05:40<00:31,  1.51it/s]/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|##################################################################################################################################################################3| 468/470 [06:13<00:01,  1.43it/s]
+100%|###################################################################################################################################################################| 470/470 [06:14<00:00,  1.48it/s]
+
+ 83%|#########################################################################################################################################5                           | 10/12 [00:02<00:00,  3.78it/s]
+
+{'eval_loss': 0.8465950208515561, 'eval_f1': 0.4425491114232836, 'eval_roc_auc': 0.47576010866158186, 'eval_accuracy': 0.4666666666666667, 'eval_runtime': 3.1981, 'eval_samples_per_second': 234.516, 'eval_steps_per_second': 3.752, 'epoch': 10.0}
+100%|###################################################################################################################################################################| 470/470 [06:20<00:00,  1.24it/s]
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+ 83%|#########################################################################################################################################5                           | 10/12 [00:02<00:00,  3.91it/s]
+100%|#####################################################################################################################################################################| 12/12 [00:02<00:00,  4.19it/s]
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+100%|#######################################################################################################################################################################| 7/7 [00:01<00:00,  4.91it/s]
+/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py:195: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  probs = softmax(torch.Tensor(y_pred_logits)).numpy()
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))

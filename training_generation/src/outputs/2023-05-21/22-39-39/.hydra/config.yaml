@@ -1,0 +1,11 @@
+ckpt: intfloat/e5-base
+dataset: sarcasm
+use_augmented_data: false
+approach: taxonomy
+augmentation_model: gpt-3.5-turbo
+wandb_project: sarcasm_real_data
+wandb_entity: venia
+batch_size: 32
+lr: 2.0e-05
+num_epochs: 10
+weight_decay: 0

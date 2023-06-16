@@ -1,0 +1,24 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 113, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 192, in train
+    trainer.train()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1740, in _inner_training_loop
+    self.create_optimizer_and_scheduler(num_training_steps=max_steps)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1059, in create_optimizer_and_scheduler
+    self.create_scheduler(num_training_steps=num_training_steps, optimizer=optimizer)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1217, in create_scheduler
+    self.lr_scheduler = get_scheduler(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/optimization.py", line 355, in get_scheduler
+    return schedule_func(optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=num_training_steps)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/optimization.py", line 109, in get_linear_schedule_with_warmup
+    return LambdaLR(optimizer, lr_lambda, last_epoch)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 221, in __init__
+    super().__init__(optimizer, last_epoch, verbose)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 32, in __init__
+    raise TypeError('{} is not an Optimizer'.format(
+TypeError: CustomSAMOptimizer is not an Optimizer
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

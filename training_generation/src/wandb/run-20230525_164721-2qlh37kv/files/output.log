@@ -1,0 +1,27 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 113, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 172, in train
+    trainer = SAMTrainer(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 498, in __init__
+    self._move_model_to_device(model, args.device)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 740, in _move_model_to_device
+    model = model.to(device)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1896, in to
+    return super().to(*args, **kwargs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1145, in to
+    return self._apply(convert)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  [Previous line repeated 3 more times]
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 820, in _apply
+    param_applied = fn(param)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1143, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 11.93 GiB total capacity; 398.46 MiB already allocated; 19.81 MiB free; 432.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

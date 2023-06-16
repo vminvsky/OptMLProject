@@ -1,0 +1,12 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 113, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 169, in train
+    self.optimizer = CustomSAMOptimizer(self.model.parameters(), lr=0.1, momentum=0.9)
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/custom_optimizer.py", line 7, in __init__
+    self.optimizer = SAM(model_params, self.base_optimizer, lr=lr)
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/sam.py", line 13, in __init__
+    self.defautlts.update(self.base_optimizer.defaults)
+AttributeError: 'SAM' object has no attribute 'defautlts'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

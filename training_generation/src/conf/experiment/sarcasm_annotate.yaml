@@ -1,0 +1,13 @@
+defaults:
+  - general
+  - sarcasm
+
+task: sarcasm
+prompt_label: annotate
+classify: True
+
+prompt_style:
+  simple: False
+  grounding: False
+  taxonomy_generation: False
+  refinement: False

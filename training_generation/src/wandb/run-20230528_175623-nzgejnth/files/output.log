@@ -1,0 +1,22 @@
+  0%|                                                                                                                                                                                                                                                                                           | 0/630 [00:00<?, ?it/s]Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 113, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 192, in train
+    trainer.train()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1929, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 251, in training_step
+    self.optimizer.first_step(zero_grad=True)
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/custom_optimizer.py", line 19, in first_step
+    self.optimizer.first_step(zero_grad)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/sam.py", line 17, in first_step
+    grad_norm = self._grad_norm()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/sam.py", line 52, in _grad_norm
+    torch.stack([
+RuntimeError: stack expects a non-empty TensorList
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

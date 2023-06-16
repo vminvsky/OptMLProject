@@ -1,0 +1,44 @@
+/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|                                                                                                                                                                             | 0/160 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetune_model.py", line 84, in main
+    model.train()
+  File "/scratch/venia/socialgpt/venia_worker_vs_gpt/src/finetuning/trainers.py", line 174, in train
+    trainer.train()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1929, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 2699, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 2731, in compute_loss
+    outputs = model(**inputs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 161, in forward
+    inputs, kwargs = self.scatter(inputs, kwargs, self.device_ids)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 178, in scatter
+    return scatter_kwargs(inputs, kwargs, device_ids, dim=self.dim)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/scatter_gather.py", line 53, in scatter_kwargs
+    kwargs = scatter(kwargs, target_gpus, dim) if kwargs else []
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/scatter_gather.py", line 44, in scatter
+    res = scatter_map(inputs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/scatter_gather.py", line 35, in scatter_map
+    return [type(obj)(i) for i in zip(*map(scatter_map, obj.items()))]
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/scatter_gather.py", line 31, in scatter_map
+    return list(zip(*map(scatter_map, obj)))
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/scatter_gather.py", line 27, in scatter_map
+    return Scatter.apply(target_gpus, None, dim, obj)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/_functions.py", line 96, in forward
+    outputs = comm.scatter(input, target_gpus, chunk_sizes, ctx.dim, streams)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/nn/parallel/comm.py", line 189, in scatter
+    return tuple(torch._C._scatter(tensor, devices, chunk_sizes, dim, streams))
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

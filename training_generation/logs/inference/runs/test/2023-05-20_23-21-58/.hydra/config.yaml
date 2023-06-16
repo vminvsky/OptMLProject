@@ -1,0 +1,35 @@
+work_dir: ${hydra:runtime.cwd}
+data_dir: ${work_dir}/data/
+output_dir: ${hydra:runtime.output_dir}
+file_dir: ${data_dir}/${experiment.task}
+ignore_warnings: false
+print_config: true
+seed: 123
+run_name: test
+models: {}
+experiment:
+  debug: true
+  models:
+    dry_run: false
+    model_name: gpt-3.5-turbo
+    n_workers_per_key: 5
+    generation_parameters:
+      max_tokens: 1028
+      best_of: 1
+      temperature: 0.7
+      top_p: 1
+      frequency_penalty: 0.5
+      presence_penalty: 0.4
+      'n': 1
+  prompt_langchain:
+    num_generations: 10
+  directions:
+  - sarcastic
+  - not sarcastic
+  task: sarcasm
+  prompt_label: taxonomy
+  prompt_style:
+    simple: false
+    grounding: false
+    taxonomy_generation: true
+    refinement: false
