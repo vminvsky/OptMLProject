@@ -1,0 +1,8 @@
+
+2000
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/finetuning/finetuning.py", line 205, in main
+    input_ids = torch.Tensor(batch['input_ids']).to(device)
+ValueError: only one element tensors can be converted to Python scalars
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

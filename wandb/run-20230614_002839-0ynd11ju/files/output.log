@@ -1,0 +1,10 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/faithful-data-gen/src/finetune_model.py", line 142, in main
+    model.train()
+  File "/scratch/venia/OptMLProject/faithful-data-gen/src/finetuning/trainers.py", line 188, in train
+    optimizer = SAM(trainer.model.parameters(), trainer.optimizer, lr=1e-3)
+  File "/scratch/venia/OptMLProject/faithful-data-gen/src/finetuning/sam.py", line 11, in __init__
+    self.base_optimizer = base_optimizer(self.param_groups, **kwargs)
+TypeError: 'NoneType' object is not callable
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

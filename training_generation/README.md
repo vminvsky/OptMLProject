@@ -39,6 +39,8 @@ davda54/sam) optimizer was taken from an online repository.
 
 The code for fine-tuning the model, both with SAM and without, can be found in ``src/finetuning.py``. Whether to use or not to use SAM as optimizer can be specified in ``src/trainer/trainer.yaml`` by setting setting the boolean *SAM_ACTIVE* to either ``True`` or ``False``, respectively.
 
+Similarily, hyperparameter search in these different settings can be run through the file ``hp_search.py``. 
+
 ### Running the file
 
 To run ``finetuning.py``: 

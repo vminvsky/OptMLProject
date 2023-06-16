@@ -1,0 +1,39 @@
+2000
+Epoch: 0, Loss:  0.6881955862045288
+Epoch: 0, Loss:  0.6603100895881653
+Epoch: 0, Loss:  0.6364494562149048
+Epoch: 0, Loss:  0.6552249193191528
+Epoch: 0, Loss:  0.6523870825767517
+Epoch: 0, Loss:  0.5904776453971863
+Epoch: 0, Loss:  0.611620306968689
+Epoch: 0, Loss:  0.6219395995140076
+Epoch: 0, Loss:  0.5445719957351685
+Epoch: 0, Loss:  0.6046257615089417
+Epoch: 0, Loss:  0.5433028340339661
+Epoch: 0, Loss:  0.6022368669509888
+Epoch: 0, Loss:  0.5594674348831177
+Epoch: 0, Loss:  0.5110554099082947
+Epoch: 0, Loss:  0.58833909034729
+Epoch: 0, Loss:  0.5885069370269775
+Epoch: 0, Loss:  0.5781097412109375
+Epoch: 0, Loss:  0.5250800251960754
+Epoch: 0, Loss:  0.5611827969551086
+Epoch: 0, Loss:  0.5070904493331909
+Epoch: 0, Loss:  0.6767213344573975
+Epoch: 0, Loss:  0.5068908929824829
+Epoch: 0, Loss:  0.5565873384475708
+Epoch: 0, Loss:  0.5143580436706543
+Epoch: 0, Loss:  0.6098496317863464
+Epoch: 0, Loss:  0.6455507278442383
+Epoch: 0, Loss:  0.5833754539489746
+Epoch: 0, Loss:  0.6486058831214905
+Epoch: 0, Loss:  0.5482873320579529
+Epoch: 0, Loss:  0.581699550151825
+Epoch: 0, Loss:  0.6005703210830688
+Epoch: 0, Loss:  0.6424058079719543
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/finetuning/finetuning.py", line 191, in main
+    for batch in valid:
+NameError: name 'valid' is not defined
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

@@ -1,0 +1,8 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/faithful-data-gen/src/finetune_model.py", line 142, in main
+    model.train()
+  File "/scratch/venia/OptMLProject/faithful-data-gen/src/finetuning/trainers.py", line 188, in train
+    optimizer = CustomSAMOptimizer(trainer.model.parameters(), lr=1e-3)
+TypeError: CustomSAMOptimizer.__init__() missing 1 required positional argument: 'momentum'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

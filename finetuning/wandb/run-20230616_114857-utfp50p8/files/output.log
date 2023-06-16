@@ -1,0 +1,8 @@
+2000
+<class 'list'>
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/finetuning/finetuning.py", line 166, in main
+    input_ids = batch['input_ids'].to(device)
+AttributeError: 'list' object has no attribute 'to'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

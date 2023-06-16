@@ -1,0 +1,7 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/finetuning/finetuning.py", line 205, in main
+    model.eval()
+AttributeError: 'list' object has no attribute 'to'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+2000

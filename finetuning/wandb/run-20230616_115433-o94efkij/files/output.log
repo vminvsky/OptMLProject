@@ -1,0 +1,7 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/finetuning/finetuning.py", line 166, in main
+    input_ids = torch.tensor(batch['input_ids'])
+TypeError: only integer tensors of a single element can be converted to an index
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+2000

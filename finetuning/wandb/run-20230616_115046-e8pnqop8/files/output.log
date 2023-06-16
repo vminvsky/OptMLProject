@@ -1,0 +1,8 @@
+
+2000
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/finetuning/finetuning.py", line 165, in main
+    batch = torch.tensor(batch)
+RuntimeError: Could not infer dtype of dict
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

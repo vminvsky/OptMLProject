@@ -1,0 +1,183 @@
+2023-06-16 11:46:54,226 INFO    StreamThr :1735378 [internal.py:wandb_internal():86] W&B internal server running at pid: 1735378, started at: 2023-06-16 11:46:54.225572
+2023-06-16 11:46:54,229 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: status
+2023-06-16 11:46:54,256 INFO    WriterThread:1735378 [datastore.py:open_for_write():85] open: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/run-5zo1ogc4.wandb
+2023-06-16 11:46:54,258 DEBUG   SenderThread:1735378 [sender.py:send():375] send: header
+2023-06-16 11:46:54,265 DEBUG   SenderThread:1735378 [sender.py:send():375] send: run
+2023-06-16 11:46:54,632 INFO    SenderThread:1735378 [dir_watcher.py:__init__():219] watching files in: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files
+2023-06-16 11:46:54,633 INFO    SenderThread:1735378 [sender.py:_start_run_threads():1124] run started: 5zo1ogc4 with start time 1686908814.231686
+2023-06-16 11:46:54,633 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 11:46:54,633 INFO    SenderThread:1735378 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 11:46:54,638 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: check_version
+2023-06-16 11:46:54,639 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: check_version
+2023-06-16 11:46:54,731 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: run_start
+2023-06-16 11:46:54,744 DEBUG   HandlerThread:1735378 [system_info.py:__init__():31] System info init
+2023-06-16 11:46:54,744 DEBUG   HandlerThread:1735378 [system_info.py:__init__():46] System info init done
+2023-06-16 11:46:54,744 INFO    HandlerThread:1735378 [system_monitor.py:start():181] Starting system monitor
+2023-06-16 11:46:54,745 INFO    SystemMonitor:1735378 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-16 11:46:54,745 INFO    HandlerThread:1735378 [system_monitor.py:probe():201] Collecting system info
+2023-06-16 11:46:54,745 INFO    SystemMonitor:1735378 [interfaces.py:start():190] Started cpu monitoring
+2023-06-16 11:46:54,746 INFO    SystemMonitor:1735378 [interfaces.py:start():190] Started disk monitoring
+2023-06-16 11:46:54,747 INFO    SystemMonitor:1735378 [interfaces.py:start():190] Started gpu monitoring
+2023-06-16 11:46:54,747 INFO    SystemMonitor:1735378 [interfaces.py:start():190] Started memory monitoring
+2023-06-16 11:46:54,748 INFO    SystemMonitor:1735378 [interfaces.py:start():190] Started network monitoring
+2023-06-16 11:46:54,798 DEBUG   HandlerThread:1735378 [system_info.py:probe():195] Probing system
+2023-06-16 11:46:54,802 DEBUG   HandlerThread:1735378 [system_info.py:_probe_git():180] Probing git
+2023-06-16 11:46:54,813 DEBUG   HandlerThread:1735378 [system_info.py:_probe_git():188] Probing git done
+2023-06-16 11:46:54,813 DEBUG   HandlerThread:1735378 [system_info.py:probe():240] Probing system done
+2023-06-16 11:46:54,813 DEBUG   HandlerThread:1735378 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-128-generic-x86_64-with-glibc2.31', 'python': '3.10.10', 'heartbeatAt': '2023-06-16T09:46:54.798944', 'startedAt': '2023-06-16T09:46:54.205309', 'docker': None, 'cuda': '10.2.89', 'args': (), 'state': 'running', 'program': '/scratch/venia/OptMLProject/finetuning/finetuning.py', 'codePath': 'finetuning/finetuning.py', 'git': {'remote': None, 'commit': '3debfbc25d9f010a6ee54a9f10e53e538d9c96a3'}, 'email': 'venia@veselovsky.org', 'root': '/scratch/venia/OptMLProject', 'host': 'iccluster039', 'username': 'veselovs', 'executable': '/scratch/venia/python/miniconda3/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 2.793458333333336, 'min': 1200.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.022, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.027, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}, {'current': 2.793, 'min': 1200.0, 'max': 3300.0}], 'disk': {'total': 216.15381240844727, 'used': 39.88172912597656}, 'gpu': 'NVIDIA GeForce GTX TITAN X', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}], 'memory': {'total': 251.80284881591797}}
+2023-06-16 11:46:54,814 INFO    HandlerThread:1735378 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-16 11:46:54,814 INFO    HandlerThread:1735378 [system_monitor.py:probe():214] Publishing system info
+2023-06-16 11:46:54,814 DEBUG   HandlerThread:1735378 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-16 11:46:54,814 DEBUG   HandlerThread:1735378 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-16 11:46:54,814 DEBUG   HandlerThread:1735378 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-16 11:46:55,635 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/requirements.txt
+2023-06-16 11:46:55,636 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/wandb-summary.json
+2023-06-16 11:46:55,636 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/conda-environment.yaml
+2023-06-16 11:47:02,489 DEBUG   HandlerThread:1735378 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-16 11:47:02,489 INFO    HandlerThread:1735378 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-16 11:47:02,492 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 11:47:02,492 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-16 11:47:02,494 DEBUG   SenderThread:1735378 [sender.py:send():375] send: files
+2023-06-16 11:47:02,495 INFO    SenderThread:1735378 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-06-16 11:47:02,507 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 11:47:02,507 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 11:47:02,636 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/conda-environment.yaml
+2023-06-16 11:47:02,636 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/wandb-metadata.json
+2023-06-16 11:47:02,681 DEBUG   SenderThread:1735378 [sender.py:send():375] send: telemetry
+2023-06-16 11:47:02,983 INFO    wandb-upload_0:1735378 [upload_job.py:push():137] Uploaded file /tmp/tmp5lem61qlwandb/k5tbs2q0-wandb-metadata.json
+2023-06-16 11:47:03,307 DEBUG   SenderThread:1735378 [sender.py:send():375] send: exit
+2023-06-16 11:47:03,312 INFO    SenderThread:1735378 [sender.py:send_exit():598] handling exit code: 1
+2023-06-16 11:47:03,318 INFO    SenderThread:1735378 [sender.py:send_exit():600] handling runtime: 8
+2023-06-16 11:47:03,346 INFO    SenderThread:1735378 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 11:47:03,357 INFO    SenderThread:1735378 [sender.py:send_exit():606] send defer
+2023-06-16 11:47:03,368 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:03,374 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-16 11:47:03,395 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:03,400 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-06-16 11:47:03,406 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 1
+2023-06-16 11:47:03,421 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:03,427 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-16 11:47:03,605 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:03,605 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-06-16 11:47:03,605 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 2
+2023-06-16 11:47:03,622 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:03,624 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-16 11:47:03,624 INFO    HandlerThread:1735378 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-16 11:47:03,631 DEBUG   SystemMonitor:1735378 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-16 11:47:03,631 DEBUG   SystemMonitor:1735378 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-16 11:47:03,632 DEBUG   SystemMonitor:1735378 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-16 11:47:03,631 INFO    HandlerThread:1735378 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-16 11:47:03,639 INFO    HandlerThread:1735378 [interfaces.py:finish():202] Joined disk monitor
+2023-06-16 11:47:03,699 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/wandb-summary.json
+2023-06-16 11:47:03,706 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/output.log
+2023-06-16 11:47:04,594 INFO    HandlerThread:1735378 [interfaces.py:finish():202] Joined gpu monitor
+2023-06-16 11:47:04,595 INFO    HandlerThread:1735378 [interfaces.py:finish():202] Joined memory monitor
+2023-06-16 11:47:04,595 INFO    HandlerThread:1735378 [interfaces.py:finish():202] Joined network monitor
+2023-06-16 11:47:04,596 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 11:47:04,596 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:04,596 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-06-16 11:47:04,596 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 3
+2023-06-16 11:47:04,596 DEBUG   SenderThread:1735378 [sender.py:send():375] send: stats
+2023-06-16 11:47:04,597 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:04,597 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 11:47:04,598 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-16 11:47:04,598 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:04,598 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-06-16 11:47:04,598 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 4
+2023-06-16 11:47:04,599 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:04,599 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-16 11:47:04,599 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:04,599 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-06-16 11:47:04,599 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 5
+2023-06-16 11:47:04,599 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:04,599 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-16 11:47:04,600 DEBUG   SenderThread:1735378 [sender.py:send():375] send: summary
+2023-06-16 11:47:04,600 INFO    SenderThread:1735378 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 11:47:04,600 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:04,601 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-06-16 11:47:04,601 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 6
+2023-06-16 11:47:04,601 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:04,601 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-16 11:47:04,601 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:04,601 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-06-16 11:47:04,607 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 11:47:04,705 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/wandb-summary.json
+2023-06-16 11:47:04,822 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 7
+2023-06-16 11:47:04,966 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:04,966 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-16 11:47:04,969 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:04,969 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-06-16 11:47:05,276 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 11:47:05,705 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/config.yaml
+2023-06-16 11:47:05,706 INFO    Thread-12 :1735378 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/output.log
+2023-06-16 11:47:08,757 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 8
+2023-06-16 11:47:08,758 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 11:47:08,758 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:08,759 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-16 11:47:08,759 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:08,759 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-06-16 11:47:08,760 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 9
+2023-06-16 11:47:08,760 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:08,760 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-16 11:47:08,760 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:08,760 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-06-16 11:47:08,761 INFO    SenderThread:1735378 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-06-16 11:47:09,707 INFO    SenderThread:1735378 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/output.log
+2023-06-16 11:47:09,708 INFO    SenderThread:1735378 [dir_watcher.py:finish():395] scan: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files
+2023-06-16 11:47:09,708 INFO    SenderThread:1735378 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/wandb-summary.json wandb-summary.json
+2023-06-16 11:47:09,708 INFO    SenderThread:1735378 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/conda-environment.yaml conda-environment.yaml
+2023-06-16 11:47:09,713 INFO    SenderThread:1735378 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/config.yaml config.yaml
+2023-06-16 11:47:09,718 INFO    SenderThread:1735378 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/output.log output.log
+2023-06-16 11:47:09,724 INFO    SenderThread:1735378 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/wandb-metadata.json wandb-metadata.json
+2023-06-16 11:47:09,725 INFO    SenderThread:1735378 [dir_watcher.py:finish():409] scan save: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/requirements.txt requirements.txt
+2023-06-16 11:47:09,730 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 10
+2023-06-16 11:47:09,730 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:09,731 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-16 11:47:09,740 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:09,741 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-06-16 11:47:09,741 INFO    SenderThread:1735378 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-16 11:47:10,165 INFO    wandb-upload_1:1735378 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/conda-environment.yaml
+2023-06-16 11:47:10,212 INFO    wandb-upload_4:1735378 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/requirements.txt
+2023-06-16 11:47:10,216 INFO    wandb-upload_2:1735378 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/config.yaml
+2023-06-16 11:47:10,232 INFO    wandb-upload_0:1735378 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/wandb-summary.json
+2023-06-16 11:47:10,279 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-16 11:47:10,424 INFO    wandb-upload_3:1735378 [upload_job.py:push():137] Uploaded file /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/files/output.log
+2023-06-16 11:47:10,625 INFO    Thread-11 (_thread_body):1735378 [sender.py:transition_state():626] send defer: 11
+2023-06-16 11:47:10,625 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:10,625 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-16 11:47:10,626 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:10,626 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-06-16 11:47:10,626 INFO    SenderThread:1735378 [file_pusher.py:join():172] waiting for file pusher
+2023-06-16 11:47:10,626 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 12
+2023-06-16 11:47:10,626 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:10,626 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-16 11:47:10,627 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 11:47:10,627 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:10,627 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-06-16 11:47:10,801 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 13
+2023-06-16 11:47:10,802 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:10,802 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-16 11:47:10,802 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:10,802 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-06-16 11:47:10,802 INFO    SenderThread:1735378 [sender.py:transition_state():626] send defer: 14
+2023-06-16 11:47:10,803 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 11:47:10,803 DEBUG   SenderThread:1735378 [sender.py:send():375] send: final
+2023-06-16 11:47:10,803 INFO    HandlerThread:1735378 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-16 11:47:10,803 DEBUG   SenderThread:1735378 [sender.py:send():375] send: footer
+2023-06-16 11:47:10,803 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: defer
+2023-06-16 11:47:10,803 INFO    SenderThread:1735378 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-06-16 11:47:10,804 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 11:47:10,805 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: server_info
+2023-06-16 11:47:10,805 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-16 11:47:10,805 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-16 11:47:10,806 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 11:47:10,806 DEBUG   SenderThread:1735378 [sender.py:send_request():402] send_request: server_info
+2023-06-16 11:47:11,089 INFO    MainThread:1735378 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-06-16 11:47:11,089 INFO    MainThread:1735378 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-06-16 11:47:11,089 INFO    MainThread:1735378 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-06-16 11:47:11,090 DEBUG   HandlerThread:1735378 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-16 11:47:11,090 INFO    HandlerThread:1735378 [handler.py:finish():845] shutting down handler
+2023-06-16 11:47:11,806 INFO    WriterThread:1735378 [datastore.py:close():298] close: /scratch/venia/OptMLProject/finetuning/wandb/run-20230616_114654-5zo1ogc4/run-5zo1ogc4.wandb
+2023-06-16 11:47:12,089 INFO    SenderThread:1735378 [sender.py:finish():1550] shutting down sender
+2023-06-16 11:47:12,089 INFO    SenderThread:1735378 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-16 11:47:12,089 INFO    SenderThread:1735378 [file_pusher.py:join():172] waiting for file pusher

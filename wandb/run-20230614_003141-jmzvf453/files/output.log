@@ -1,0 +1,22 @@
+
+  0%|                                                                                                                                                                                   | 0/348 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/venia/OptMLProject/faithful-data-gen/src/finetune_model.py", line 142, in main
+    model.train()
+  File "/scratch/venia/OptMLProject/faithful-data-gen/src/finetuning/trainers.py", line 195, in train
+    trainer.train()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/transformers/trainer.py", line 1996, in _inner_training_loop
+    self.optimizer.step()
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/scratch/venia/python/miniconda3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/venia/OptMLProject/faithful-data-gen/src/finetuning/sam.py", line 42, in step
+    assert closure is not None, "Sharpness Aware Minimization requires closure, but it was not provided"
+AssertionError: Sharpness Aware Minimization requires closure, but it was not provided
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
