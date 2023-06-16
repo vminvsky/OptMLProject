@@ -16,8 +16,6 @@ UBI_DATA_DIR = DATA_DIR / "ubi"
 
 GPTURK_DATA_DIR = DATA_DIR / "gpturk"
 
-TEN_DIM_DATA_DIR = DATA_DIR / "ten-dim"
-
 SRC_DIR = ROOT_DIR / "src"
 
 MODELS_DIR = ROOT_DIR / "models"
